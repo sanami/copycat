@@ -30,7 +30,7 @@ end
 def get_links_from_css(dat)
 	all = []
 	#url(/images/bar/about/langs.png)
-	rx_href = /url\((.+?)\)/
+	rx_href = /url\(["']?(.+?)["']?\)/
 
 	dat.scan(rx_href) do |matches|
 		#pp matches
@@ -40,6 +40,7 @@ def get_links_from_css(dat)
 	all
 end
 
+# Get links from local file
 def process_data(file_name)
 	puts "    process_data(#{file_name})"
 	dat = File.read(file_name)
@@ -49,12 +50,14 @@ def process_data(file_name)
 	if file_name.end_with? '.css'
 		links = get_links_from_css dat
 	elsif file_name.end_with? '.js'
+		# skip
 	else
 		links = get_links_from_html dat
 	end
 	links
 end
 
+# Links from page
 def process_links(links)
 	links.each do |uri|
 		uri = get_uri uri
@@ -88,4 +91,12 @@ def process_links(links)
 	end
 end
 
-process_links ['http://bar.drincash.com/ru/about']
+# Local file
+def process_file(file_name)
+	new_links = process_data(file_name)
+	process_links new_links
+end
+
+# process_links ['http://bar.drincash.com/ru/about']
+
+process_file '/home/sa/projects/copycat/tmp/bar.drincash.com/index.html'
