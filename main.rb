@@ -99,4 +99,5 @@ end
 
 # process_links ['http://bar.drincash.com/ru/about']
 
-process_file '/home/sa/projects/copycat/tmp/bar.drincash.com/index.html'
+#process_file '/home/sa/projects/copycat/tmp/bar.drincash.com/index.html'
+process_file '/home/sa/projects/copycat/tmp/bar.drincash.com/stylesheets/bar/office.css'
