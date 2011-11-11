@@ -12,9 +12,9 @@ def ROOT(file)
 end
 
 # Ensure existing folders
-#['db', 'config', 'log', 'tmp'].each do |path|
-#	FileUtils.mkpath ROOT(path)
-#end
+['tmp'].each do |path|
+	FileUtils.mkpath ROOT(path)
+end
 
 # Required folders
 #['app', 'lib'].each do |folder|
