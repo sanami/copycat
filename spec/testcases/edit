@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Реквизиты для подписания договора &gt; Drincash</title>
+    <meta name="description" content="DrinCash – подарите напиток (кружку пива, бокал вина, коктейль или кофе) онлайн! Получите в местном заведении. Уникальный способ поздравить, отблагодарить или оказать знак внимания." />
+    <meta name="keywords" content="DrinCash, подарки, пиво, вино, кофе, подарок на день рождения, удивительные вещи, подарочный сертификат, подарок оригинально, необычные подарки, интернет подарки" />
+    <link href="/favicon.ico?1320769147" rel="shortcut icon" type="image/x-icon" />
+    <link href="/stylesheets/jquery.ui.css?1320769148" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/bar/office.css?1320769148" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/bar_office_cached.js?1320769148" type="text/javascript"></script>
+    <meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="2Trl2tkurWRYx2zSNFwk8ymtJhqfEGbnoBu0p3ANuRU="/>
+  </head>
+  <body class="m-companies m-companies_edit">
+    <div id="wrapper">
+      <div id="header">
+        <div class="logo"><a href="/office"></a></div>
+        <a href="/ru/office/company/edit" class="lang rus"></a>
+        <a href="/en/office/company/edit" class="lang eng"></a>
+        <div class="account">
+          <p>Москва, Бар «Coyot Bar»</p>
+          <p>
+            Менеджер сети
+            <span>coyot bar</span>
+          </p>
+          <p class="exit"><a href="/logout" data-method="delete" rel="nofollow">Выйти</a></p>
+        </div>
+        <nav class="b-navigation"><ul><li class=" begin" id="root" title="Главная"><a href="http://bar.drincash.com/office"><span class="left">Главная</span><span class="center"></span></a></li><li id="offers" title="Акции"><a href="/office/offers"><span class="left">Акции</span><span class="center"></span></a></li><li id="coupons" title="Купоны"><a href="/office/coupons"><span class="left">Купоны</span><span class="center"></span></a></li><li id="finance" title="Финансы"><a href="/office/finance"><span class="left">Финансы</span><span class="center"></span></a></li><li class="selected" id="settings" title="Настройка"><a href="http://bar.drincash.com/office/company/edit" class="selected"><span class="left">Настройка</span><span class="center"></span></a></li><li id="personnel" title="Персонал"><a href="/office/personnels"><span class="left">Персонал</span><span class="center"></span></a></li><li class=" end" id="help" title="Помощь"><a href="/office/help"><span class="left">Помощь</span><span class="center"></span></a></li></ul></nav>
+      </div>
+      <!-- #header -->
+      <div id="middle">
+        <div id="container">
+          <div class="edit" id="content">
+            <!-- subnavigation -->
+            <nav class="b-subnavigation"><ul><li class="selected" id="settings_edit" title="Юридические данные"><a href="/office/company/edit" class="selected">Юридические данные<span class="center"></span></a></li><li id="settings_card" title="Карта"><a href="/office/company/card">Карта<span class="center"></span></a></li><li id="settings_owner" title="Управляющий"><a href="/office/owner/edit">Управляющий<span class="center"></span></a></li><li id="settings_bars" title="Список заведений"><a href="/office/bars">Список заведений<span class="center"></span></a></li></ul></nav>
+            <!-- /subnavigation -->
+            
+            <div id="page">
+  <!--h1>Реквизиты для подписания договора</h1-->
+  <!--<dl class="company-status company-status_fulfilled"><dt>Статус: </dt><dd>информация заполнена</dd></dl>-->
+  <form accept-charset="UTF-8" action="/office/company" class="formtastic company" id="edit_company_83" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="2Trl2tkurWRYx2zSNFwk8ymtJhqfEGbnoBu0p3ANuRU=" /></div>
+    <div class="b-container">
+      <div class="b-container__left">
+        <fieldset class="inputs"><legend><span>Реквизиты компании</span></legend><ol>
+          <li class="string input required stringish" id="company_legal_name_input"><label class=" label required" for="company_legal_name">Наименование юридического лица <span class="hint">(согласно уставу)</span><abbr title="required">*</abbr></label><div class="decorator"><input id="company_legal_name" maxlength="255" name="company[legal_name]" placeholder="ООО «Дринкэш»" type="text" value="ООО &quot;Обручев&quot;" /></div>
+</li>
+          <li class="half_input string input required stringish" id="company_inn_input"><label class=" label required" for="company_inn">ИНН<abbr title="required">*</abbr></label><div class="decorator"><input id="company_inn" maxlength="10" name="company[inn]" type="text" value="7726062105" /></div>
+
+</li>
+          <li class="half_input last string input required stringish" id="company_kpp_input"><label class=" label required" for="company_kpp">КПП<abbr title="required">*</abbr></label><div class="decorator"><input id="company_kpp" maxlength="20" name="company[kpp]" type="text" value="77010001" /></div>
+
+</li>
+          <li class="string input required stringish" id="company_ogrn_input"><label class=" label required" for="company_ogrn">ОГРН<abbr title="required">*</abbr></label><div class="decorator"><input id="company_ogrn" maxlength="13" name="company[ogrn]" type="text" value="1027700132195" /></div>
+
+</li>
+</ol></fieldset>        <fieldset class="inputs"><legend><span>Реквизиты банковского счёта</span></legend><ol>
+          <li class="string input required stringish" id="company_bank_bik_input"><label class=" label required" for="company_bank_bik">БИК<abbr title="required">*</abbr></label><div class="decorator"><input id="company_bank_bik" maxlength="20" name="company[bank_bik]" type="text" value="044525225" /></div>
+
+</li>
+          <li class="string input required stringish" id="company_bank_name_input"><label class=" label required" for="company_bank_name">Наименование банка<abbr title="required">*</abbr></label><div class="decorator"><input id="company_bank_name" maxlength="255" name="company[bank_name]" type="text" value="ОАО &quot;Сбербанк России&quot;" /></div>
+
+<p class="inline-hints">полное наименование банка, согласно договору на открытие рассчётного счёта</p></li>
+          <li class="string input required stringish" id="company_correspondent_account_input"><label class=" label required" for="company_correspondent_account">Корреспондентский счёт<abbr title="required">*</abbr></label><div class="decorator"><input id="company_correspondent_account" maxlength="20" name="company[correspondent_account]" type="text" value="30101810400000000000" /></div>
+
+</li>
+          <li class="string input required stringish" id="company_settlement_account_input"><label class=" label required" for="company_settlement_account">Рассчётный счёт организации<abbr title="required">*</abbr></label><div class="decorator"><input id="company_settlement_account" maxlength="20" name="company[settlement_account]" type="text" value="30111111116666643678" /></div>
+
+</li>
+</ol></fieldset>        <fieldset class="buttons"><ol>
+          <li class="commit button"><button class="update sub" name="button" type="submit"><span class="bt2"><span><span><span>Сохранить данные организации</span></span></span></span></button></li>
+</ol></fieldset>      </div>
+      <div class="b-container__right">
+        <fieldset class="inputs"><legend><span>Юридический адрес</span></legend><ol>
+          <li class="half_input string input required stringish" id="company_legal_postal_code_input"><label class=" label" for="company_legal_postal_code">Индекс<abbr title="required">*</abbr></label><div class="decorator"><input id="company_legal_postal_code" maxlength="6" name="company[legal_postal_code]" type="text" value="117574" /></div>
+
+</li>
+          <li class="half_input last string input required stringish" id="company_legal_city_input"><label class=" label" for="company_legal_city">Город<abbr title="required">*</abbr></label><div class="decorator"><input class="city_field" id="company_legal_city" maxlength="255" name="company[legal_city]" type="text" value="Москва" /></div>
+
+</li>
+          <li class="string input required stringish" id="company_legal_address_input"><label class=" label required" for="company_legal_address">Адрес<abbr title="required">*</abbr></label><div class="decorator"><input id="company_legal_address" maxlength="255" name="company[legal_address]" type="text" value="пр.Вернадского 115" /></div>
+
+<p class="inline-hints">согласно учредительным документам, включая индекс</p></li>
+          <li class="boolean input required" id="company_addresses_equal_input"><input name="company[addresses_equal]" type="hidden" value="0" /><label class="" for="company_addresses_equal" name="company[addresses_equal]"><input checked="checked" id="company_addresses_equal" name="company[addresses_equal]" type="checkbox" value="1" />Физический адрес совпадает с юридическим<abbr title="required">*</abbr></label>
+
+</li>
+</ol></fieldset>        <fieldset class="inputs" id="company_postal_address_fieldset" style="display: none"><legend><span>Почтовый адрес</span></legend><ol>
+          <li class="half_input string input required stringish" id="company_postal_postal_code_input"><label class=" label" for="company_postal_postal_code">Индекс<abbr title="required">*</abbr></label><div class="decorator"><input id="company_postal_postal_code" maxlength="6" name="company[postal_postal_code]" type="text" value="117574" /></div>
+
+</li>
+          <li class="half_input last string input required stringish" id="company_postal_city_input"><label class=" label" for="company_postal_city">Город<abbr title="required">*</abbr></label><div class="decorator"><input class="city_field" id="company_postal_city" maxlength="255" name="company[postal_city]" type="text" value="Москва" /></div>
+
+</li>
+          <li class="string input required stringish" id="company_postal_address_input"><label class=" label required" for="company_postal_address">Адрес<abbr title="required">*</abbr></label><div class="decorator"><input id="company_postal_address" maxlength="255" name="company[postal_address]" placeholder="индекс, город, улица/проспект/переулок, дом, стр/корпус, офис/кабинет" type="text" value="пр.Вернадского 115" /></div>
+
+<p class="inline-hints">по этому адресу будет отправляться корреспонденция</p></li>
+</ol></fieldset>        <fieldset class="inputs"><legend><span>Контактные данные</span></legend><ol>
+          <li class="half_input phone input required stringish" id="company_phone_input"><label class=" label required" for="company_phone">Телефон<abbr title="required">*</abbr></label><div class="decorator"><input id="company_phone" maxlength="255" name="company[phone]" type="tel" value="4953212459" /></div>
+
+</li>
+          <li class="half_input last phone input optional stringish" id="company_fax_input"><label class=" label" for="company_fax">Факс <span class="hint">(не обязателен)</span></label><div class="decorator"><input id="company_fax" maxlength="255" name="company[fax]" type="tel" value="4567999" /></div>
+</li>
+          <li class="email input required stringish" id="company_accounting_email_input"><label class=" label required" for="company_accounting_email">E-mail бухгалтерии<abbr title="required">*</abbr></label><div class="decorator"><input id="company_accounting_email" maxlength="255" name="company[accounting_email]" type="email" value="cpp_master@mail.ru" /></div>
+
+</li>
+</ol></fieldset>        <fieldset class="inputs"><legend><span>Руководитель компании</span></legend><ol>
+          <li class="string input required stringish" id="company_responsible_person_name_input"><label class=" label required" for="company_responsible_person_name">ФИО подписанта <span class="hint">(в именительном падеже)</span><abbr title="required">*</abbr></label><div class="decorator"><input id="company_responsible_person_name" maxlength="255" name="company[responsible_person_name]" placeholder="Иванов Иван Иванович" type="text" value="Иванова Петра Петровича" /></div>
+</li>
+          <li class="string input required stringish" id="company_responsible_person_name_genitive_input"><label class=" label required" for="company_responsible_person_name_genitive">ФИО подписанта<abbr title="required">*</abbr></label><div class="decorator"><input id="company_responsible_person_name_genitive" maxlength="255" name="company[responsible_person_name_genitive]" placeholder="Иванова Ивана Ивановича" type="text" value="Иванова Петра Петровича" /></div>
+
+<p class="inline-hints">в родительном падеже</p></li>
+          <li class="string input required stringish" id="company_responsible_person_position_input"><label class=" label required" for="company_responsible_person_position">Должность подписанта<abbr title="required">*</abbr></label><div class="decorator"><input id="company_responsible_person_position" maxlength="255" name="company[responsible_person_position]" placeholder="генерального директора" type="text" value="генерального директора" /></div>
+
+<p class="inline-hints">в родительном падеже</p></li>
+          <li class="string input required stringish" id="company_responsible_person_document_genitive_input"><label class=" label required" for="company_responsible_person_document_genitive">Документ, подтверждающий полномочия подписанта<abbr title="required">*</abbr></label><div class="decorator"><input id="company_responsible_person_document_genitive" maxlength="255" name="company[responsible_person_document_genitive]" placeholder="устава" type="text" value="устава" /></div>
+
+<p class="inline-hints">в родительном падеже</p></li>
+</ol></fieldset>      </div>
+    </div>
+</form></div>
+
+          </div>
+          <!-- #content -->
+        </div>
+        <!-- #container -->
+      </div>
+      <!-- #middle -->
+    </div>
+    <!-- #wrapper -->
+    <div class="b-footer">
+      <ul><li class=" begin" id="root" title="Главная"><a href="http://bar.drincash.com/office"><span class="left">Главная</span><span class="center"></span></a></li><li id="offers" title="Акции"><a href="/office/offers"><span class="left">Акции</span><span class="center"></span></a></li><li id="coupons" title="Купоны"><a href="/office/coupons"><span class="left">Купоны</span><span class="center"></span></a></li><li id="finance" title="Финансы"><a href="/office/finance"><span class="left">Финансы</span><span class="center"></span></a></li><li class="selected" id="settings" title="Настройка"><a href="http://bar.drincash.com/office/company/edit" class="selected"><span class="left">Настройка</span><span class="center"></span></a></li><li id="personnel" title="Персонал"><a href="/office/personnels"><span class="left">Персонал</span><span class="center"></span></a></li><li class=" end" id="help" title="Помощь"><a href="/office/help"><span class="left">Помощь</span><span class="center"></span></a></li></ul>
+      <div class="left">
+        <p>Сервис DrinCash – дарите настоящие напитки онлайн!</p>
+        <p>© 2011</p>
+      </div>
+      <div class="right">
+        <!--p><a href="#">Заказать звонок</a></p-->
+        <p class="numer">
+          <span>274-5555</span>
+          <span class="code">+7 (905)</span>
+        </p>
+      </div>
+    </div>
+    <!-- #footer -->
+  </body>
+</html>

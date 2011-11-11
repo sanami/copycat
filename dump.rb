@@ -1,8 +1,8 @@
-require 'pp'
 require 'uri'
 require 'open-uri'
 require 'fileutils'
-require './tools.rb'
+require File.dirname(__FILE__) + '/config.rb'
+require 'tools.rb'
 
 $site_url = URI.parse('http://bar.drincash.com')
 $processed_links = []
@@ -97,7 +97,10 @@ def process_file(file_name)
 	process_links new_links
 end
 
+if __FILE__ == $0
 # process_links ['http://bar.drincash.com/ru/about']
 
 #process_file '/home/sa/projects/copycat/tmp/bar.drincash.com/index.html'
-process_file '/home/sa/projects/copycat/tmp/bar.drincash.com/stylesheets/bar/office.css'
+#process_file '/home/sa/projects/copycat/tmp/bar.drincash.com/stylesheets/bar/office.css'
+end
+
