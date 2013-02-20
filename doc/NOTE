@@ -1,0 +1,19 @@
+----------------------------------------------------------------------------- dump
+wget http://eat.fi/en/helsinki
+    Save page to file
+
+thor app:dump_file http://eat.fi/ helsinki
+    Process file, download all resources
+
+js_tool.rb convert_css
+    Unpack CSS
+
+js_tool.rb convert
+    Unpack JS
+
+----------------------------------------------------------------------------- dev
+Work with saved cookies
+
+Process index url
+
++Parse form inputs
