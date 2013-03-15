@@ -11,6 +11,11 @@ js_tool.rb convert_css
 js_tool.rb convert
     Unpack JS
 
+----------------------------------------------------------------------------- dump site
+thor app:dump_site https://roadtrippers.com/?mode=explore /assets/i 2
+                                url                         rx      level
+only resources from same host, matching rx, level deep
+
 ----------------------------------------------------------------------------- dev
 Work with saved cookies
 

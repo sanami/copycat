@@ -10,6 +10,13 @@ class App < Thor
     dump.process_file(file_path)
   end
 
+  desc "dump_site SITE_URL RX_GOOD DEEP_LEVEL", "dump all site resources"
+  def dump_site(site_url, rx_good = nil, deep_level = -1)
+    pp site_url, rx_good, deep_level
+    dump = Dump.new(site_url, rx_good)
+    dump.process_site(nil, deep_level.to_i)
+  end
+
   desc "parse_form FILE_PATH", "generate scaffold scheme from form"
   def parse_form(file_path)
     Form.parse_file(file_path)

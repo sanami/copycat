@@ -3,9 +3,19 @@ require 'open-uri'
 require 'fileutils'
 
 class Dump
-  def initialize(site_url)
+  attr_reader :site_url
+  attr_accessor :rx_url
+  attr_reader :processed_links
+
+  def initialize(site_url, rx_url = nil)
     @site_url = URI.parse(site_url)      # base url
     @processed_links = []
+
+    if rx_url
+      @rx_url = Regexp.compile(eval(rx_url))
+    else
+      @rx_url = nil
+    end
   end
 
   def get_uri(str)
@@ -16,13 +26,27 @@ class Dump
     uri
   end
 
+  # File to store URL
+  def get_file_path(uri)
+    path = "tmp/#{uri.host}#{uri.path}"
+    if uri.query
+      path += "?#{uri.query}"
+    end
+
+    ROOT(path)
+  end
+
   def get_links_from_html(dat)
     all = []
     rx_href = /(href|src)=["'](.+?)["']/
 
     dat.scan(rx_href) do |matches|
       #pp matches
-      all << matches[1]
+      link = matches[1]
+
+      if link != '#'
+        all << link
+      end
     end
 
     all
@@ -57,38 +81,50 @@ class Dump
     else
       links = get_links_from_html dat
     end
-    links
+
+    if rx_url
+      links.select {|link| link =~ rx_url}
+    else
+      links
+    end
   end
 
   # Links from page
-  def process_links(links)
+  #   links - list of load resources
+  #   level - unlimited if -1, only these links if 0, children links from links if 1, etc
+  def process_links(links, level = -1)
     links.each do |uri|
       uri = get_uri uri
       next if @processed_links.include? uri
       @processed_links << uri
 
-      pp uri
-
       if uri.host == @site_url.host
-        file_name = ROOT("tmp/#{uri.host}" + uri.path)
-        dir_name =  File.dirname(file_name)
-        pp dir_name
+        file_name = get_file_path(uri)
+        puts "#{uri} -> #{file_name}"
 
-        FileUtils.mkpath dir_name
+        # Ensure folder
+        file_name.dirname.mkpath
 
         begin
-          unless File.exist? file_name
+          if File.exist? file_name
+            puts "\texist"
+          else
             open(uri, 'rb') do |page|
               File.open(file_name, 'w') do |f|
                 f.write page.read
               end
             end
+            puts "\tsaved"
           end
 
-          new_links = process_data(file_name)
-          process_links new_links
+          unless level == 0
+            new_links = process_data(file_name)
+            process_links(new_links, level - 1)
+          end
         rescue => ex
+          puts "\terror"
           pp ex
+          #raise
         end
       end
 
@@ -99,5 +135,12 @@ class Dump
   def process_file(file_name)
     new_links = process_data(file_name)
     process_links new_links
+  end
+
+  def process_site(site_url = nil, deep_level = -1)
+    process_links([site_url || @site_url.to_s], deep_level)
+
+    puts "\nProcessed links:"
+    pp @processed_links
   end
 end
