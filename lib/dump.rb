@@ -1,7 +1,6 @@
 require 'uri'
 require 'open-uri'
 require 'fileutils'
-require 'tools.rb'
 
 class Dump
   def initialize(site_url)

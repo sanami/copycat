@@ -1,6 +1,3 @@
-require File.dirname(__FILE__) + '/config.rb'
-require 'tools.rb'
-
 module Form
   extend self
 
