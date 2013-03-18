@@ -137,6 +137,7 @@ class Dump
     process_links new_links
   end
 
+  # Get and process file from site
   def process_site(site_url = nil, deep_level = -1)
     process_links([site_url || @site_url.to_s], deep_level)
 

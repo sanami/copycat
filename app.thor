@@ -1,6 +1,8 @@
-require File.dirname(__FILE__) + '/lib/config.rb'
+#!/usr/bin/env ruby
+require File.dirname(File.absolute_path(__FILE__)) + '/lib/config.rb'
 require 'dump.rb'
 require 'form.rb'
+require 'convert.rb'
 
 class App < Thor
   desc "dump_file SITE_URL FILE_PATH", "dump site resources"
@@ -21,4 +23,19 @@ class App < Thor
   def parse_form(file_path)
     Form.parse_file(file_path)
   end
+
+  desc 'convert_js', "Convert all JS files"
+  method_option :pretend, :aliases => "-p", :desc => "List found JS files"
+  def convert_js
+    Convert.convert_js(params)
+  end
+
+  desc 'convert_css', "Convert all CSS files"
+  def convert_css
+    Convert.convert_css
+  end
+end
+
+if __FILE__ == $0
+  App.start
 end

@@ -5,36 +5,11 @@ describe Dump do
   subject do
     Dump.new 'http://google.com'
   end
+
   it "should get_file_path" do
     uri = URI.parse("https://roadtrippers.com/?mode=explore")
     pp subject.get_file_path(uri)
-  end
-
-  describe 'drincash.com' do
-    subject do
-      Dump.new 'http://bar.drincash.com'
-    end
-
-    it 'should process css' do
-      links = subject.process_data(TEST_DIR + 'about.css')
-      pp links
-      links.should_not be_empty
-    end
-
-    it 'should process html' do
-      links = subject.process_data(TEST_DIR + 'edit')
-      pp links
-      links.should_not be_empty
-    end
-
-    it 'should skip js' do
-      links = subject.process_data(TEST_DIR + 'keynote.js')
-      links.should be_empty
-    end
-
-    it 'should parse file' do
-      subject.process_file(TEST_DIR + 'edit')
-    end
+    subject.get_file_path(uri).to_s.should include "roadtrippers.com/?mode=explore"
   end
 
   describe "eat.fi" do
@@ -43,13 +18,13 @@ describe Dump do
     end
 
     it "should process_data css" do
-      links = subject.process_data(TEST_DIR + 'global.css')
+      links = subject.process_data(TEST_DIR + 'eat.fi/global.css')
       pp links
       links.should_not be_empty
     end
 
     it "should process_file css" do
-      subject.process_file(TEST_DIR + 'global.css')
+      subject.process_file(TEST_DIR + 'eat.fi/global.css')
     end
   end
 
@@ -63,7 +38,7 @@ describe Dump do
     end
 
     it 'should process_data' do
-      links = subject.process_data(TEST_DIR + 'roadtrippers-index.html')
+      links = subject.process_data(TEST_DIR + 'roadtrippers.com/roadtrippers-index.html')
       pp links
       links.should_not be_empty
 
