@@ -54,7 +54,6 @@ module WebTools
 
             if cached_file_exists? cached_url
               puts "\texists at #{cached_url}"
-              pp URI.escape(cached_url)
               #page = @@local_agent.get("file://#{URI.escape(cached_url)}") # Mechanize can't open local file with '?'
               #page.uri = URI.parse(url)
               page = Mechanize::Page.new(URI.parse(url), {'content-type'=>'text/html'}, ::File.read(cached_url), nil, self)
@@ -66,19 +65,20 @@ module WebTools
             else
               puts "\tdownload"
 
-#            @headers = {}
-#            @headers['Accept-Language'] = 'ru-ru;q=1.0'
-#            @headers['Accept'] = '*/*'
-#            @headers['user-agent'] = 'Mozilla/5.0'
-#            @headers['connection'] = 'keep-alive'
-#            @headers['Accept-Encoding'] = 'deflate'
-#            @headers['Accept-Charset'] = 'windows-1251;q=1.0'
-##            @headers['Accept-Charset'] = 'utf-8;q=1.0'
-#            @headers['keep-alive'] = '30'
-#
-#            page = get_orig(:url => url, :headers => @headers )
-              page = get_orig(url, &block)
+              headers = self.request_headers
+              headers['Accept'] = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+              headers['Accept-Charset'] = 'UTF-8,*;q=0.5'
+              headers['Accept-Encoding'] = 'gzip,deflate,sdch'
+              headers['Accept-Language'] = 'en-US,en;q=0.8,ru;q=0.6'
+              headers['Cache-Control'] = 'no-cache'
+              headers['Connection'] = 'keep-alive'
+              #headers['Host'] = 'www.kayak.ru'
+              headers['Pragma'] = 'no-cache'
+              #headers['Referer'] = 'http://www.kayak.ru/hotels/'
+              headers['User-Agent'] = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22'
+              #headers['Cookie'] = 'Apache=g8$yBQ-AAABPYI6vqU-c8-S1c_kQ; kayak=nQ8YDPoK5yfiUMGbfeet; hiddenParams=src%3D%26searchingagain%3Dfalse%26page_origin%3D%26po%3D%26personality%3D%26provider%3D%26r9secret%3D%26r9debug%3D%26recent%3DN%26fid%3D%26ccFeeCalcSelector%3Dundefined; p1.med.sid=13-5JOKTTDsj_OY_V5XjAyZf; p1.med._hmc=rlYBmAIu_T1EoZE1aj2T7YweU7o; p1.med.admin=false; p1.med.token=0_SoukRquslvjKpKC6VJXA; p1.med.sc=6; emos_jcsid=AAABPYI5Yw4AHmf2XUZ0UpmTdGF93jGB:38:AAABPYMejX1OL5EejIMFHgTAgvbatj3j:1363704450428; emos_jcvid=AAABPYI5Yw4AHmf2XUZ0UpmTdGF93jGB:1:AAABPYI5Yw4AHmf2XUZ0UpmTdGF93jGB:1363689431821:0:false:20; _ym_visorc=b; p1.med.searched=true; cluster=5; NSC_q5-tqbslmf=ffffffff09892a1b45525d5f4f58455e445a4a422a59'
 
+              page = get_orig(url, &block)
               #ap page.response
 
               # Could be redirect

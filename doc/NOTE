@@ -16,6 +16,10 @@ thor app:dump_site https://roadtrippers.com/welcome?mode=explore /assets/i 2
                                 url                                rx      level
 only resources from same host, matching rx, level deep
 
+thor app:dump_site http://www.kayak.ru/hotels/Antalya,Turciya-c1669/2013-04-02/2013-04-05/2guests
+
+
+
 ----------------------------------------------------------------------------- dev
 +Work with saved cookies
 

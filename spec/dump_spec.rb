@@ -58,4 +58,29 @@ describe Dump do
     #  subject.processed_links.count.should be > 1
     #end
   end
+
+  describe "kayak.ru" do
+    subject do
+      Dump.new 'http://www.kayak.ru/hotels/#/Antalya,Turcija-c1669/2guests', rx_url: '/\bv\d+/i', skip_errors: true
+      #Dump.new 'http://www.kayak.ru/flights/', rx_url: '/\bv\d+/i', skip_errors: false
+      #Dump.new 'http://www.kayak.ru/hotels/Antalya,Turciya-c1669/2013-04-02/2013-04-05/2guests;map', rx_url: '/\bv\d+/i', skip_errors: true
+    end
+
+    it "should process_site level 0" do
+      subject.process_site(nil, 0)
+      subject.processed_links.count.should == 1
+
+      subject.save_cookies
+    end
+
+    it "should process_site level 1" do
+      subject.process_site(nil, 1) # assets
+      subject.processed_links.count.should be > 1
+    end
+
+    it "should process_site level 2" do
+      subject.process_site(nil, 2) # images in css
+      subject.processed_links.count.should be > 1
+    end
+  end
 end
