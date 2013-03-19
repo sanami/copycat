@@ -5,19 +5,19 @@ wget http://eat.fi/en/helsinki
 thor app:dump_file http://eat.fi/ helsinki
     Process file, download all resources
 
-js_tool.rb convert_css
+thor app:convert_css
     Unpack CSS
 
-js_tool.rb convert
+thor app:convert_js
     Unpack JS
 
 ----------------------------------------------------------------------------- dump site
-thor app:dump_site https://roadtrippers.com/?mode=explore /assets/i 2
-                                url                         rx      level
+thor app:dump_site https://roadtrippers.com/welcome?mode=explore /assets/i 2
+                                url                                rx      level
 only resources from same host, matching rx, level deep
 
 ----------------------------------------------------------------------------- dev
-Work with saved cookies
++Work with saved cookies
 
 Process index url
 

@@ -12,7 +12,7 @@ require 'bundler'
 Bundler.require
 
 # Ensure existing folders
-['tmp'].each do |path|
+['tmp', 'log'].each do |path|
   FileUtils.mkpath ROOT(path)
 end
 

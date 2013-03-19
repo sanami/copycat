@@ -6,12 +6,6 @@ describe Dump do
     Dump.new 'http://google.com'
   end
 
-  it "should get_file_path" do
-    uri = URI.parse("https://roadtrippers.com/?mode=explore")
-    pp subject.get_file_path(uri)
-    subject.get_file_path(uri).to_s.should include "roadtrippers.com/?mode=explore"
-  end
-
   describe "eat.fi" do
     subject do
       Dump.new 'http://eat.fi/css/packed/'
@@ -30,11 +24,12 @@ describe Dump do
 
   describe "roadtrippers.com" do
     subject do
-      Dump.new 'https://roadtrippers.com/?mode=explore', '/assets/i'
+      Dump.new 'https://roadtrippers.com/welcome?mode=explore', rx_url: '/assets/i', skip_errors: false
     end
 
-    it "should initialize with rx_url" do
-      subject.rx_url.should == /assets/i
+    it "should detect good_resource" do
+      subject.good_resource?('assets').should == true
+      subject.good_resource?('asset').should == false
     end
 
     it 'should process_data' do
@@ -42,9 +37,9 @@ describe Dump do
       pp links
       links.should_not be_empty
 
-      # Only rx_url matches
+      # Only matches
       links.each do |url|
-        (url =~ subject.rx_url).should_not == nil
+        subject.good_resource?(url).should == true
       end
     end
 

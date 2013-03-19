@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rspec', :require => false
-gem 'nokogiri'
 gem 'thor'
-gem 'awesome_print'
+gem 'mechanize'
+gem 'socksify'
+gem 'activesupport', :require => 'active_support/all'
 gem 'rkelly'
 gem 'therubyracer', :require => 'v8'
+gem 'awesome_print'
+gem 'rspec', :require => false

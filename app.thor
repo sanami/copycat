@@ -7,7 +7,7 @@ require 'convert.rb'
 class App < Thor
   desc "dump_file SITE_URL FILE_PATH", "dump site resources"
   def dump_file(site_url, file_path)
-    dump = Dump.new(site_url)
+    dump = Dump.new(site_url, debug: false)
     # dump.process_links [file_path]
     dump.process_file(file_path)
   end
@@ -15,8 +15,9 @@ class App < Thor
   desc "dump_site SITE_URL RX_GOOD DEEP_LEVEL", "dump all site resources"
   def dump_site(site_url, rx_good = nil, deep_level = -1)
     pp site_url, rx_good, deep_level
-    dump = Dump.new(site_url, rx_good)
+    dump = Dump.new(site_url, rx_url: rx_good, debug: false)
     dump.process_site(nil, deep_level.to_i)
+    dump.save_cookies
   end
 
   desc "parse_form FILE_PATH", "generate scaffold scheme from form"
