@@ -20,9 +20,9 @@ thor app:dump_site http://www.kayak.ru/hotels/Antalya,Turciya-c1669/2013-04-02/2
 
 
 
------------------------------------------------------------------------------ dev
-+Work with saved cookies
+----------------------------------------------------------------------------- TODO
++Use Mechanize to support cookies
 
-Process index url
++Process index url
 
 +Parse form inputs
