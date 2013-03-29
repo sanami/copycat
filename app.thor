@@ -35,6 +35,11 @@ class App < Thor
   def convert_css
     Convert.convert_css
   end
+
+  desc 'convert_xml', "Convert all XML files"
+  def convert_xml
+    Convert.convert_xml
+  end
 end
 
 if __FILE__ == $0

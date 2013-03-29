@@ -31,4 +31,19 @@ module Convert
       #puts result
     end
   end
+
+  def convert_xml
+    tool = "xmlindent"
+    #tool_options = "-i 2 -w"
+    tool_options = "-i 2 -w -f -nbe"
+
+    Pathname.glob('**/*.xml').sort.each do |file|
+      puts "#{file.size}\t#{file}"
+
+      cmd_line = "#{tool} #{tool_options} \"#{file}\""
+      puts cmd_line
+      result = `#{cmd_line}`
+      #puts result
+    end
+  end
 end
