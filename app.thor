@@ -26,9 +26,8 @@ class App < Thor
   end
 
   desc 'convert_js', "Convert all JS files"
-  method_option :pretend, :aliases => "-p", :desc => "List found JS files"
-  def convert_js(pretend)
-    Convert.convert_js(pretend: pretend)
+  def convert_js
+    Convert.convert_js
   end
 
   desc 'convert_css', "Convert all CSS files"
