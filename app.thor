@@ -39,6 +39,11 @@ class App < Thor
   def convert_xml
     Convert.convert_xml
   end
+
+  desc 'convert_assets', "Remove MD5 hash from file name"
+  def convert_assets
+    Convert.convert_assets
+  end
 end
 
 if __FILE__ == $0

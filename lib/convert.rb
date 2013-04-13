@@ -44,4 +44,18 @@ module Convert
       #puts result
     end
   end
+
+  # Remove MD5 hash from file name
+  def convert_assets
+    Pathname.glob('**/*').each do |file|
+      name = file.to_s
+      if name =~ /^.+(\-[\da-f]{32}).+$/
+        new_name = name.sub($1, '')
+        pp new_name
+
+        file.rename(new_name)
+      end
+
+    end
+  end
 end
