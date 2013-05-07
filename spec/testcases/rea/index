@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html class="l-html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="description" content="ОАО «Концерн Росэнергоатом» опубликовало свой дебютный интерактивный годовой отчет — за 2011 год. Предоставляя отчетность для всех заинтересованных сторон в максимально удобном формате, компания стремится к полному соответствию требованиям прозрачности и полноты информации.">
+	<meta property="og:title" content="Концерн Росэнергоатом — Интерактивный годовой отчет 2011">
+	<meta property="og:description" content="ОАО «Концерн Росэнергоатом» опубликовало свой дебютный интерактивный годовой отчет — за 2011 год. Предоставляя отчетность для всех заинтересованных сторон в максимально удобном формате, компания стремится к полному соответствию требованиям прозрачности и полноты информации.">
+	<meta property="og:image" content="theme/rea/img/social_ru.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Концерн Росэнергоатом — Интерактивный годовой отчет 2011</title>
+
+	<link rel="shortcut icon" href="theme/rea/favicon.ico">
+	<link rel="image_src" href="theme/rea/img/social_ru.png">
+	
+	<link rel="stylesheet" type="text/css" href="css/motioncss.css?3" media="all">
+	<link rel="stylesheet" type="text/css" href="css/w-nav.css?3" media="all">
+	<link rel="stylesheet" type="text/css" href="css/editor.css?3" media="all">
+	<link rel="stylesheet" type="text/css" href="theme/rea/theme.css?3" media="all">
+	<link rel="stylesheet" type="text/css" href="css/print.css?3" media="print">
+
+	<script type="text/javascript" src="js/mootools-core-1.4.5.js"></script>
+	<script type="text/javascript" src="js/mootools-more-1.4.0.1.js"></script>
+	<script type="text/javascript" src="js/mootools-extras.js"></script>
+
+	<script type="text/javascript" src="js/Highcharts/adapters/mootools-adapter.js"></script>
+	<script type="text/javascript" src="js/Highcharts/highcharts.js"></script>
+	<script type="text/javascript" src="theme/rea/ichartData.js"></script>
+	<script type="text/javascript" src="js/raphael.js"></script>
+
+	<script type="text/javascript" src="js/telescope-5.js?3"></script>
+
+	<script type="text/javascript" src="theme/rea/modules/cover/cover.js?3"></script>
+	<script type="text/javascript" src="theme/rea/modules/map/map.js?3"></script>
+	<script type="text/javascript" src="theme/rea/modules/info_1/info_1.js?3"></script>
+	<script type="text/javascript" src="theme/rea/modules/info_2/info_2.js?3"></script>
+	<script type="text/javascript" src="theme/rea/modules/info_3/info_3.js?3"></script>
+	<script type="text/javascript" src="theme/rea/modules/info_4/info_4.js?3"></script>
+	<script type="text/javascript" src="theme/rea/modules/info_5/info_5.js?3"></script>
+	<script type="text/javascript" src="theme/rea/modules/structure/structure.js?3"></script>
+
+	<script type="text/javascript" src="js/Widgets/WSwitcher.js?3"></script>
+	<script type="text/javascript" src="js/Widgets/WNav.js?3"></script>
+	<script type="text/javascript" src="js/Widgets/WHeadnav.js?3"></script>
+	<script type="text/javascript" src="js/Widgets/WSitemap.js?3"></script>
+	<script type="text/javascript" src="js/Widgets/WPrintselect.js?3"></script>
+
+	<script type="text/javascript" src="js/export-all.js?3"></script>
+
+	<script type="text/javascript" src="js/main.js?3"></script>
+</head>
+<body class="l-body lang_ru">
+
+<div class="l-preloader"></div>
+
+<div class="l-canvas">
+
+<div class="l-canvas-h">
+
+<div class="l-header">
+	<div class="l-header-h">
+
+		<div class="l-subheader pos_top">
+			<div class="l-subheader-h">
+
+				<div class="w-logo">
+					<span class="i18n lang_ru">
+						<a href="http://www.rosenergoatom.ru/" title="Сайт компании" target="_blank" class="w-logo-site type_ru">Сайт компании</a>
+						<span class="l-subheader-divider"></span>
+						<a href="javascript:void(0)" title="Главная страница отчета" class="w-logo-report type_ru">Главная страница отчета</a>
+						<img class="w-logo-img for_print" src="theme/rea/img/w-logo.lang_ru.for_print.png" alt="" style="display: none;">
+					</span>
+					<span class="i18n lang_en">
+						<a href="http://www.rosenergoatom.ru/wps/wcm/connect/rosenergoatom/site_en/" title="Company site" target="_blank" class="w-logo-site type_eng">Company site</a>
+						<span class="l-subheader-divider"></span>
+						<a href="javascript:void(0)" title="Report main page" class="w-logo-report type_eng">Report main page</a>
+						<img class="w-logo-img for_print" src="theme/rea/img/w-logo.lang_en.for_print.png" alt="" style="display: none;">
+					</span>
+				</div>
+
+
+				<div class="w-headnav">
+					<a class="w-headnav-button type_files" href="javascript:void(0)" data-id="464" title="Файлы">Файлы</a>
+					<a class="w-headnav-button type_print" href="javascript:window.print()" title="Печать">Печать</a>
+					<a class="w-headnav-button type_help" href="javascript:void(0)" data-id="463" title="Справка">Справка</a>
+				</div>
+
+				<div class="w-search">
+					<form class="w-search-form" action="#">
+						<input class="w-search-query" type="text" name="query" id="query">
+						<input class="w-search-submit i18n lang_en" type="submit" value="Search">
+						<input class="w-search-submit i18n lang_ru" type="submit" value="Поиск">
+					</form>
+				</div>
+
+				<div class="w-headfav" style="display:none;">
+					<a class="w-toolbar-section-button type_favorite show_favorite active" href="javascript:void(0)"></a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="l-subheader pos_bottom"><div class="l-subheader-h">
+			<div class="w-printselect">
+				<div class="w-printselect-radio">
+					<a class="w-printselect-radio-item active" data-value="page" href="javascript:void(0)">
+						<span class="i18n lang_ru">Текущая страница</span>
+						<span class="i18n lang_en">Current page</span>
+					</a>
+					<a class="w-printselect-radio-item" data-value="report" href="javascript:void(0)">
+						<span class="i18n lang_ru">Весь отчет</span>
+						<span class="i18n lang_en">Whole report</span>
+					</a>
+					<a class="w-printselect-radio-item" data-value="fav" href="javascript:void(0)">
+						<span class="i18n lang_ru">Избранное</span>
+						<span class="i18n lang_en">Favorites</span>
+					</a>
+				</div>
+				<div class="w-printselect-delimiter"></div>
+				<div class="w-printselect-checkbox">
+					<a class="w-printselect-checkbox-item active" data-value="notes" href="javascript:void(0)">
+						<span class="i18n lang_ru">Печать с вложениями</span>
+						<span class="i18n lang_en">With notes</span>
+					</a>
+				</div>
+				<div class="w-printselect-button">
+					<a class="w-printselect-button-item" href="javascript:void(0)">
+						<span class="i18n lang_ru">Распечатать</span>
+						<span class="i18n lang_en">Print</span>
+					</a>
+				</div>
+				<div class="w-printselect-delimiter second"></div>
+				<div class="w-printselect-text"></div>
+			</div>
+		</div></div>
+
+	</div>
+</div>
+
+<div class="l-page"><div class="l-page-h">
+
+	<!-- l-sidebar -->
+	<div class="l-sidebar for_navigation"><div class="l-sidebar-h"><div class="l-sidebar-hh">
+		<div class="w-nav"><div class="w-nav-h">
+
+	<!-- level 1 -->
+	<div class="w-nav-list layout_ver view_list level_1"><div class="w-nav-list-h">
+			<div class="w-nav-item level_1" data-id="826"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1 i-link name_informaciya-o-godovom-otchete" data-id="826" data-type="element_page">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Информация об отчете</span>
+					<span class="i18n lang_en">About this Annual Report</span>
+				</span>
+			</a>
+			
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="762"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Обращение руководства</span>
+					<span class="i18n lang_en">Address by the Management</span>
+				</span>
+			</a>
+			
+						<!-- level 2 -->
+			<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_2"><div class="w-nav-list-h">
+
+			
+				<div class="w-nav-item level_2" data-id="827"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_obraschenie-predsedatelya-soveta-di" data-id="827" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Обращение Председателя Совета директоров</span>
+							<span class="i18n lang_en">Address of the Chairman of the Board of Directors</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="828"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_obraschenie-generalnogo-direktora" data-id="828" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Обращение Генерального директора</span>
+							<span class="i18n lang_en">Address of the General Director</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+			</div></div>
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="824"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1 i-link name_geografiya-deyatelnosti" data-id="824" data-type="element_page">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">География деятельности</span>
+					<span class="i18n lang_en">Business Geography</span>
+				</span>
+			</a>
+			
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="876"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1 i-link name_interaktivnij-analiz1" data-id="876" data-type="element_page">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Интерактивный анализ</span>
+					<span class="i18n lang_en">Interactive Analysis</span>
+				</span>
+			</a>
+			
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="1018"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Ключевые положения</span>
+					<span class="i18n lang_en">Key Statements</span>
+				</span>
+			</a>
+			
+						<!-- level 2 -->
+			<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_2"><div class="w-nav-list-h">
+
+			
+				<div class="w-nav-item level_2" data-id="1017"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_mesto-i-rol-koncerna" data-id="1017" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Место и роль Концерна в контуре предприятий ГК «Росатом»</span>
+							<span class="i18n lang_en">Place and role of OJSC Concern Rosenergoatom in the chain of enterprises included in the State Corporation Rosatom</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="1019"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_uvelichenie-doli-atomnoj-generacii" data-id="1019" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Увеличение доли атомной генерации</span>
+							<span class="i18n lang_en">Increase the share of nuclear power generation</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="1020"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_obespechenie-bezopasnosti-rossijski" data-id="1020" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Обеспечение безопасности российских АЭС</span>
+							<span class="i18n lang_en">Ensuring the safety of Russian nuclear power plants</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="1021"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_ustojchivoe-razvitie-koncerna" data-id="1021" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Устойчивое развитие Концерна</span>
+							<span class="i18n lang_en">Sustainable growth of OJSC Concern Rosenergoatom</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="1022"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_vzaimodejstvie-s-zainteresovannimi-" data-id="1022" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Взаимодействие Концерна с заинтересованными сторонами</span>
+							<span class="i18n lang_en">OJSC Concern Rosenergoatom Engagement with Stakeholders</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+			</div></div>
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="337"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Годовой отчет</span>
+					<span class="i18n lang_en">Annual Report</span>
+				</span>
+			</a>
+			
+						<!-- level 2 -->
+			<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_2"><div class="w-nav-list-h">
+
+			
+				<div class="w-nav-item level_2" data-id="763"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_kalendar-kluchevih-sobitij-2011-god" data-id="763" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Календарь событий 2011 года</span>
+							<span class="i18n lang_en">Calendar of Key Corporate Events</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="752"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Общие сведения о Концерне</span>
+							<span class="i18n lang_en">Overview</span>
+						</span>
+					</a>
+					
+										<!-- level 3 -->
+					<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_3">
+						<div class="w-nav-list-h">
+
+							
+							<div class="w-nav-item level_3" data-id="758"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_obschaya-informaciya" data-id="758" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Общая информация</span>
+										<span class="i18n lang_en">General Information</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="759"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_istoricheskaya-spravka" data-id="759" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Историческая справка</span>
+										<span class="i18n lang_en">History</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="760"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_struktura" data-id="760" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Структура</span>
+										<span class="i18n lang_en">Corporate Structure</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="761"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_dochernie-obschestva" data-id="761" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Дочерние общества</span>
+										<span class="i18n lang_en">Corporate Subsidiaries</span>
+									</span>
+								</a>
+															</div></div>
+
+													</div>
+					</div>
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="753"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Стратегия и перспективы развития</span>
+							<span class="i18n lang_en">Development Strategy and Outlooks</span>
+						</span>
+					</a>
+					
+										<!-- level 3 -->
+					<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_3">
+						<div class="w-nav-list-h">
+
+							
+							<div class="w-nav-item level_3" data-id="764"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_missiya" data-id="764" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Миссия</span>
+										<span class="i18n lang_en">Mission</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="765"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_biznes-model" data-id="765" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Бизнес-модель</span>
+										<span class="i18n lang_en">Business Model</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="766"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_kluchevie-strategicheskie-celi-i-in" data-id="766" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Ключевые стратегические цели и инициативы</span>
+										<span class="i18n lang_en">Key Strategic Goals and Initiatives</span>
+									</span>
+								</a>
+															</div></div>
+
+													</div>
+					</div>
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="754"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Результаты основной деятельности</span>
+							<span class="i18n lang_en">Performance in Key Activities</span>
+						</span>
+					</a>
+					
+										<!-- level 3 -->
+					<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_3">
+						<div class="w-nav-list-h">
+
+							
+							<div class="w-nav-item level_3" data-id="767"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_proizvodstvo-elektricheskoj-energii" data-id="767" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Положение в отрасли</span>
+										<span class="i18n lang_en">Position in the Industry</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="768"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_proizvodstvo-elektricheskoj-energii" data-id="768" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Генерирующие мощности</span>
+										<span class="i18n lang_en">Generation of Electricity by Russia’s NPPs. Generating Capacities</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="769"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_obespechenie-bezopasnosti-rossijski" data-id="769" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Обеспечение безопасности российских АЭС</span>
+										<span class="i18n lang_en">Ensuring Russia’s NPP Safety. Radiation Impact on Personnel and General Public</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="770"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_razvitie-potenciala-generacii-elekt" data-id="770" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Развитие потенциала генерации электрической энергии на АЭС</span>
+										<span class="i18n lang_en">Developing the Electrical Power Generation Potential of NPPs</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="771"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_tehnicheskoe-obsluzhivanie-i-remont" data-id="771" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Техническое обслуживание и&nbsp;ремонт</span>
+										<span class="i18n lang_en">Maintenance and Repairs of NPPs in Russia. Implemented RPS</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="772"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_otchet-ob-energoeffektivnosti" data-id="772" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Энергоэффективность</span>
+										<span class="i18n lang_en">Energy Efficiency Report</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="773"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_kluchevie-napravleniya-innovacionno" data-id="773" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Инновационная деятельность</span>
+										<span class="i18n lang_en">Key Directions in Innovation</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="774"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_mezhdunarodnaya-deyatelnost" data-id="774" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Международная деятельность</span>
+										<span class="i18n lang_en">International Activities</span>
+									</span>
+								</a>
+															</div></div>
+
+													</div>
+					</div>
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="755"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Система управления</span>
+							<span class="i18n lang_en">Governance System</span>
+						</span>
+					</a>
+					
+										<!-- level 3 -->
+					<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_3">
+						<div class="w-nav-list-h">
+
+							
+							<div class="w-nav-item level_3" data-id="831"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_sostav-i-struktura-organov-upravlen" data-id="831" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Состав и структура органов управления</span>
+										<span class="i18n lang_en">Composition and Structure of Governing Bodies</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="832"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_sistema-korporativnogo-upravleniya" data-id="832" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Система корпоративного управления</span>
+										<span class="i18n lang_en">Corporate Management System</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="833"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_upravlenie-sobstvennostu" data-id="833" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Управление собственностью</span>
+										<span class="i18n lang_en">Property Management</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="834"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_sistema-kluchevih-pokazatelej-effek" data-id="834" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Оценка и вознаграждение персонала</span>
+										<span class="i18n lang_en">System of Key Efficiency Ratios. Employee Evaluation and Remuneration</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="835"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_upravlenie-riskami" data-id="835" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Управление рисками</span>
+										<span class="i18n lang_en">Risk Management</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="836"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_upravlenie-kachestvom" data-id="836" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Управление качеством</span>
+										<span class="i18n lang_en">Quality Management</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="837"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_vnutrennij-kontrol-i-audit" data-id="837" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Внутренний контроль и аудит</span>
+										<span class="i18n lang_en">Internal Control and Audit</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="838"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_upravlenie-zakupkami" data-id="838" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Управление закупками</span>
+										<span class="i18n lang_en">Procurement Management</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="839"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_informacionnie-tehnologii" data-id="839" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Информационные технологии</span>
+										<span class="i18n lang_en">Information Technologies</span>
+									</span>
+								</a>
+															</div></div>
+
+													</div>
+					</div>
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="756"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Финансовое состояние и результаты деятельности</span>
+							<span class="i18n lang_en">Financial Situation and Performance</span>
+						</span>
+					</a>
+					
+										<!-- level 3 -->
+					<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_3">
+						<div class="w-nav-list-h">
+
+							
+							<div class="w-nav-item level_3" data-id="842"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_osnovnie-finansovie-rezultati-deyat" data-id="842" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Основные финансовые результаты деятельности</span>
+										<span class="i18n lang_en">Key Financial Performance Figures</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="844"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_investicionnaya-deyatelnost" data-id="844" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Инвестиционная деятельность</span>
+										<span class="i18n lang_en">Investment Activities</span>
+									</span>
+								</a>
+															</div></div>
+
+													</div>
+					</div>
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="757"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Устойчивое развитие</span>
+							<span class="i18n lang_en">Sustainable Development</span>
+						</span>
+					</a>
+					
+										<!-- level 3 -->
+					<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_3">
+						<div class="w-nav-list-h">
+
+							
+							<div class="w-nav-item level_3" data-id="779"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_poziciya-koncerna-v-oblasti-ustojch" data-id="779" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Позиция в области устойчивого развития</span>
+										<span class="i18n lang_en">Position on Sustainable Development</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="780"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_vozdejstvie-na-okruzhauschuu-sredu" data-id="780" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Воздействие на окружающую&nbsp;среду</span>
+										<span class="i18n lang_en">Environmental Impact</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="781"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_upravlenie-personalom" data-id="781" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Управление персоналом</span>
+										<span class="i18n lang_en">Human Resource Management</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="782"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_podderzhka-i-razvitie-personala-mot" data-id="782" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Поддержка, развитие и&nbsp;мотивация персонала</span>
+										<span class="i18n lang_en">HR Support and Development. Personnel Motivation and Involvement</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="783"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_ohrana-truda" data-id="783" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Охрана труда</span>
+										<span class="i18n lang_en">Labour Protection</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="784"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_socialnaya-politika" data-id="784" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Социальная политика</span>
+										<span class="i18n lang_en">Social Policy</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="785"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_razvitie-territorij-prisutstviya" data-id="785" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Развитие территорий присутствия</span>
+										<span class="i18n lang_en">Development of Host Regions</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="786"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_blagotvoritelnaya-i-sponsorskaya-de" data-id="786" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Благотворительная и спонсорская деятельность</span>
+										<span class="i18n lang_en">Charity and Sponsorship</span>
+									</span>
+								</a>
+															</div></div>
+
+							
+							<div class="w-nav-item level_3" data-id="787"><div class="w-nav-item-h">
+																<a href="javascript:void(0)" class="w-nav-anchor level_3 i-link name_vzaimodejstvie-s-zainteresovannimi-" data-id="787" data-type="element_page">
+									<span class="w-nav-icon"></span>
+									<span class="w-nav-anchor-h">
+										<span class="i18n lang_ru">Взаимодействие с заинтересованными сторонами</span>
+										<span class="i18n lang_en">Engagement of Stakeholders</span>
+									</span>
+								</a>
+															</div></div>
+
+													</div>
+					</div>
+					
+				</div></div>
+
+			
+			</div></div>
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="340"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Финансовый отчет</span>
+					<span class="i18n lang_en">Financial Report</span>
+				</span>
+			</a>
+			
+						<!-- level 2 -->
+			<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_2"><div class="w-nav-list-h">
+
+			
+				<div class="w-nav-item level_2" data-id="864"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_zakluchenie-revizionnoj-komissii-po" data-id="864" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Заключение Ревизионной комиссии</span>
+							<span class="i18n lang_en">Auditing Committee Statement</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="863"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_zakluchenie-auditora-podtverzhdausc" data-id="863" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Заключение Аудитора</span>
+							<span class="i18n lang_en">Auditor’s Report</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="1025"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_buhgalterskij-balans" data-id="1025" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Бухгалтерский баланс</span>
+							<span class="i18n lang_en">Accounting Balance</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="859"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_otchet-o-dvizhenii-denezhnih-sredst" data-id="859" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Отчет о движении денежных&nbsp;средств</span>
+							<span class="i18n lang_en">Cash Flow Statement</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="860"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_otchet-ob-izmeneniyah-kapitala-za-2" data-id="860" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Отчет об изменениях капитала</span>
+							<span class="i18n lang_en">Statement of Changes in Equity</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="861"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_otchet-o-pribilyah-i-ubitkah-za-201" data-id="861" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Отчет о прибылях и убытках</span>
+							<span class="i18n lang_en">Profit and Loss Statement</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="862"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_raschet-ocenki-stoimosti-chistih-ak" data-id="862" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Расчет оценки стоимости чистых&nbsp;активов</span>
+							<span class="i18n lang_en">Calculated Corporate Net Asset Value</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+			</div></div>
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="751"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Приложения</span>
+					<span class="i18n lang_en">Appendices</span>
+				</span>
+			</a>
+			
+						<!-- level 2 -->
+			<div class="w-nav-list layout_ver view_list drop_inside show_onclick level_2"><div class="w-nav-list-h">
+
+			
+				<div class="w-nav-item level_2" data-id="857"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_tablica-standartnih-elementov-rukov" data-id="857" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Таблица индикаторов GRI,  РСПП</span>
+							<span class="i18n lang_en">Table of Standard Disclosures under GRI, RUME</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="858"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_sistema-indikatorov-publichnoj-otch" data-id="858" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Система индикаторов публичной&nbsp;отчетности ОАО&nbsp;«Концерн&nbsp;Росэнергоатом»</span>
+							<span class="i18n lang_en">System of Public Reporting Indicators at Rosenergoatom Concern OJSC</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="1024"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_zakluchenie-nefinansovogo-auditora" data-id="1024" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Заключение по итогам нефинансового аудита Годового отчета за 2011 год</span>
+							<span class="i18n lang_en">Non-financial Assurance Report over 2011 Annual Report</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="866"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_zakluchenie-departamenta-vnutrenneg" data-id="866" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Заключение Департамента внутреннего контроля и аудита</span>
+							<span class="i18n lang_en">Statement By the Internal Control and Audits Department</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="865"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_otchet-o-sobludenii-koncernom-poloz" data-id="865" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Отчет о соблюдении Кодекса корпоративного поведения</span>
+							<span class="i18n lang_en">Compliance with Provisions of the Corporate Code of Conduct</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="867"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_dejstvuuschie-energobloki-aes" data-id="867" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Действующие энергоблоки АЭС</span>
+							<span class="i18n lang_en">Operating Nuclear Power Units</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+				<div class="w-nav-item level_2" data-id="868"><div class="w-nav-item-h">
+
+										<a href="javascript:void(0)" class="w-nav-anchor level_2 i-link name_pokazateli-raboti-energoblokov-aes" data-id="868" data-type="element_page">
+						<span class="w-nav-icon"></span>
+						<span class="w-nav-anchor-h">
+							<span class="i18n lang_ru">Показатели работы энергоблоков&nbsp;АЭС</span>
+							<span class="i18n lang_en">Performance of Nuclear Power Units</span>
+						</span>
+					</a>
+					
+					
+				</div></div>
+
+			
+			</div></div>
+			
+		</div></div>
+	
+			<div class="w-nav-item level_1 for_fav" style="display:none;"><div class="w-nav-item-h">
+			<a  class="w-nav-anchor level_1 show_favorite name_izbrannoe" href="javascript:void(0)">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Избранное</span>
+					<span class="i18n lang_en">Favorite</span>
+				</span>
+			</a>
+		</div></div>
+		</div></div>
+
+</div></div> <!-- / w-nav -->
+	</div></div></div>
+	<!-- / l-sidebar -->
+
+
+	<div class="l-primary">
+		<a class="l-primary-tick" href="javascript:void(0)" title=""></a>
+		<div class="l-primary-h"><div class="l-primary-hh">
+
+		<!-- Image for social sharing -->
+		<img class="i-shareimage" src="theme/rea/img/social_ru.png" alt="" style="display:none;">
+		<img class="i-shareimage" src="theme/rea/img/social_en.png" alt="" style="display:none;">
+
+		<!-- Page renderer -->
+		<div class="l-renderer for_page" style="display:none;">
+
+			<div class="w-header i-text"><h1><!-- Page title --></h1></div>
+			
+			<div class="w-breadcrumbs"></div>
+
+			<div class="w-toolbar">
+				<div class="w-toolbar-section type_comparison"></div>
+				<div class="w-toolbar-section type_telescope">
+					<a class="w-toolbar-section-button type_short" href="javascript:void(0)"></a>
+					<a class="w-toolbar-section-button type_full" href="javascript:void(0)"></a>
+				</div>
+				<div class="w-toolbar-section type_divider">
+					<div class="w-toolbar-section-h divider_left"></div>
+					<div class="w-toolbar-section-h divider_right"></div>
+				</div>
+				<div class="w-toolbar-section type_other">
+					<a class="w-toolbar-section-button type_favorite" href="javascript:void(0)"></a>
+					<a class="w-toolbar-section-button type_xls" target="_blank" href="javascript:void(0)" title="">XLS</a>
+					<a class="w-toolbar-section-button type_pdf" target="_blank" href="javascript:void(0)" title="">PDF</a>
+					<a class="w-toolbar-section-button type_fullscreen" href="javascript:void(0)"></a>
+					<a class="w-toolbar-section-button type_comparison" href="javascript:void(0)"></a>
+					<a class="w-toolbar-section-button type_charts" href="javascript:void(0)"></a>
+				</div>
+				<div class="w-toolbar-section type_navigation">
+					<a class="w-toolbar-section-button type_prev" href="javascript:void(0)"></a>
+					<a class="w-toolbar-section-button type_next" href="javascript:void(0)"></a>
+				</div>
+			</div>
+
+			<div class="i-fav for_keyst">
+				<a href="javascript:void(0)" class="i-fav-button"></a>
+				<div class="w-keyst"><div class="w-keyst-h i-keyst"><!-- Page key statement --></div></div>
+			</div>
+
+			<div class="w-text i-text">
+				<div class="w-telescope version_short"><!-- Page short text --></div>
+				<div class="w-telescope version_full" style="display:none;"><!-- Page full version --></div>
+			</div>
+			
+			<div class="w-nav-arrows" style="display: none;">
+				<div class="w-nav-arrows-h">
+					<a class="w-nav-arrows-arrow type_left" title="Предыдущая страница">Предыдущая страница</a>
+					<a class="w-nav-arrows-arrow type_top" title="Наверх">Наверх</a>
+					<a class="w-nav-arrows-arrow type_right" title="Следующая страница">Следующая страница</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- / Page renderer -->
+
+		<!-- Icharts renderer -->
+		<div class="l-renderer for_icharts" style="display:none;">
+			<div class="w-icharts">
+
+				<div class="w-icharts-header"><div class="w-icharts-header-h"><div class="w-icharts-header-hh">
+					<div class="w-icharts-menu"><!-- Charts menu container --></div>
+					<div class="w-icharts-submenu">
+						<div class="w-icharts-submenu-w"><!-- Charts submenu container --></div>
+					</div>
+				</div></div></div>
+
+				<div class="w-icharts-main">
+					<div class="w-icharts-holder">
+						<div class="w-icharts-holder-left">
+							<div class="w-icharts-type">
+								<span class="w-icharts-type-label">Отображение:</span>
+								<div class="w-icharts-type-list"><!-- Type container --></div>
+								<span class="w-icharts-type-label push_right">Показатели:</span>
+								<div class="clear"></div>
+							</div>
+
+							<div class="w-icharts-viewer" id="chartsViewer"></div>
+
+						</div>
+						<div class="w-icharts-holder-right">
+							<div class="w-icharts-vmenu"><!-- Charts vertical menu container --></div>
+						</div>
+						<div class="w-icharts-objects">
+							<div class="w-icharts-objects-title">Объекты:</div>
+							<div class="w-icharts-objects-list"><!-- Object container --></div>
+							<div class="clear"></div>
+						</div>
+						<div class="w-icharts-comments"></div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<!-- / Icharts renderer -->
+
+		<!-- Fav renderer -->
+		<div class="l-renderer for_fav" style="display: none;">
+
+			<div class="w-header i-text"><h1>
+				<span class="i18n lang_ru">Избранное</span>
+				<span class="i18n lang_en">Favorite</span>
+			</h1></div>
+
+			<div class="w-toolbar"><!-- Главный тулбар для всего избранного - отличается тем что у него есть пока только одна кнопка -  "На весь экран" и он растянут на всю ширину -->
+				<div class="w-toolbar-section type_main">
+					<a class="w-toolbar-section-button type_fullscreen" href="javascript:void(0)">На весь экран</a>
+				</div>
+			</div>
+
+			<div class="w-text i-text"></div>
+
+		</div>
+		<!-- / Fav renderer -->
+
+	</div></div></div><!-- / l-primary -->
+
+	<div class="l-secondary">
+
+		<div class="l-secondary-h"><div class="l-secondary-hh">
+
+			<!-- Note renderer -->
+			<div class="l-renderer for_note" style="display:none;">
+
+				<div class="w-header i-text"><h1><!-- Note title --></h1></div>
+
+				<div class="w-toolbar">
+					<div class="w-toolbar-section type_telescope">
+						<a class="w-toolbar-section-button type_short" href="javascript:void(0)" title=""></a>
+						<a class="w-toolbar-section-button type_full" href="javascript:void(0)" title=""></a>
+					</div>
+					<div class="w-toolbar-section type_divider">
+						<div class="w-toolbar-section-h divider_left"></div>
+						<div class="w-toolbar-section-h divider_right"></div>
+					</div>
+					<div class="w-toolbar-section type_other">
+						<a class="w-toolbar-section-button type_favorite" href="javascript:void(0)" title=""></a>
+						<a class="w-toolbar-section-button type_print" href="javascript:void(0)" title=""></a>
+						<a class="w-toolbar-section-button type_xls" target="_blank" href="javascript:void(0)" title="">XLS</a>
+						<a class="w-toolbar-section-button type_pdf" target="_blank" href="javascript:void(0)" title="">PDF</a>
+						<a class="w-toolbar-section-button type_fullscreen" href="javascript:void(0)" title=""></a>
+					</div>
+				</div>
+
+				<div class="w-text i-text">
+					<div class="w-telescope version_short"><!-- Note short text --></div>
+					<div class="w-telescope version_full"><!-- Note full text --></div>
+				</div>
+			</div>
+			<!-- / Note renderer -->
+
+			<!-- Page renderer -->
+			<div class="l-renderer for_page" style="display:none;">
+
+				<div class="w-header i-text"><h1><!-- Page title --></h1></div>
+
+				<div class="w-breadcrumbs"></div>
+
+				<div class="w-toolbar">
+					<div class="w-toolbar-section type_comparison"></div>
+					<div class="w-toolbar-section type_telescope">
+						<a class="w-toolbar-section-button type_short" href="javascript:void(0)"></a>
+						<a class="w-toolbar-section-button type_full" href="javascript:void(0)"></a>
+					</div>
+					<div class="w-toolbar-section type_divider">
+						<div class="w-toolbar-section-h divider_left"></div>
+						<div class="w-toolbar-section-h divider_right"></div>
+					</div>
+					<div class="w-toolbar-section type_other">
+						<a class="w-toolbar-section-button type_favorite" href="javascript:void(0)"></a>
+						<a class="w-toolbar-section-button type_xls" target="_blank" href="javascript:void(0)" title="">XLS</a>
+						<a class="w-toolbar-section-button type_pdf" target="_blank" href="javascript:void(0)" title="">PDF</a>
+						<a class="w-toolbar-section-button type_fullscreen" href="javascript:void(0)"></a>
+						<a class="w-toolbar-section-button type_comparison" href="javascript:void(0)"></a>
+						<a class="w-toolbar-section-button type_charts" href="javascript:void(0)"></a>
+					</div>
+					<div class="w-toolbar-section type_navigation">
+						<a class="w-toolbar-section-button type_prev" href="javascript:void(0)"></a>
+						<a class="w-toolbar-section-button type_next" href="javascript:void(0)"></a>
+					</div>
+				</div>
+
+				<div class="w-keyst"><div class="w-keyst-h i-keyst"><!-- Page key statement --></div></div>
+
+				<div class="w-text i-text">
+					<div class="w-telescope version_short"><!-- Page short text --></div>
+					<div class="w-telescope version_full" style="display:none;"><!-- Page full version --></div>
+				</div>
+
+				<div class="w-nav-arrows" style="display: none;">
+					<div class="w-nav-arrows-h">
+						<a class="w-nav-arrows-arrow type_left" title="Предыдущая страница">Предыдущая страница</a>
+						<a class="w-nav-arrows-arrow type_top" title="Наверх">Наверх</a>
+						<a class="w-nav-arrows-arrow type_right" title="Следующая страница">Следующая страница</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- / Page renderer -->
+
+			<!-- Search renderer -->
+			<div class="l-renderer for_search" style="display: none;">
+
+				<div class="w-header i-text"><h1>Результаты поиска</h1></div>
+
+				<div class="w-search-toolbar">
+					<div class="w-search-toolbar-section type_results">
+						<a class="w-search-toolbar-section-button type_all active" href="javascript:void(0)" title="Все результаты">Все результаты</a>
+						<a class="w-search-toolbar-section-button type_text" href="javascript:void(0)" title="Только текст">Только текст</a>
+						<a class="w-search-toolbar-section-button type_graph" href="javascript:void(0)" title="Только графика">Только графика</a>
+					</div>
+
+					<div class="w-search-toolbar-section type_nav">
+						<a class="w-search-nav-link type_next" href="javascript:void(0)" title="Следующая страница" style="display:none;">Следующая страница</a>
+						<span class="w-search-nav-pager">0/0</span>
+
+						<a class="w-search-nav-link type_prev" href="javascript:void(0)" title="Предыдущая страница" style="display:none;">Предыдущая страница</a>
+					</div>
+				</div>
+
+				<div class="w-search-title"></div>
+
+				<div class="w-text i-text">
+				</div>
+			</div>
+			<!-- / Search renderer -->
+
+			<!-- Favorite Contents renderer -->
+			<div class="l-renderer for_favcont" style="display: none;">
+
+				<div class="w-header i-text"><h1>Содержание избранного</h1></div>
+
+				<div class="w-text i-text"></div>
+			</div>
+			<!-- / Favorite Contents renderer -->
+
+			<!-- Pagepanel renderer -->
+			<div class="l-renderer for_pagepanel" style="display: none;">
+
+				<div class="w-subheader i-text"><h1><!-- Pagepanel header --></h1></div>
+
+				<ul class="w-controls">
+					<li class="w-controls-action type_charts"><a href="javascript:void(0)"></a></li>
+					<li class="w-controls-action type_short"><a href="javascript:void(0)"></a></li>
+					<li class="w-controls-action type_full"><a href="javascript:void(0)"></a></li>
+					<li class="w-controls-action type_favorite"><a href="javascript:void(0)"></a></li>
+					<li class="w-controls-action type_print"><a href="javascript:void(0)"></a></li>
+					<li class="w-controls-action type_pdf"><a href="javascript:void(0)" target="_blank"></a></li>
+					<li class="w-controls-action type_xls"><a href="javascript:void(0)" target="_blank"></a></li>
+				</ul>
+
+			</div>
+			<!-- / Pagepanel renderer -->
+
+
+		</div></div>
+
+		<div class="w-leftnav" style="display:none;">
+			<div class="w-leftnav-section">
+				<a title="" href="javascript:void(0)" class="w-leftnav-button type_prev">Свернуть</a>
+				<a title="" href="javascript:void(0)" class="w-leftnav-button type_close">Закрыть</a>
+			</div>
+		</div>
+	</div><!-- / l-secondary -->
+
+	<div class="l-print-additions" style="display: none;"></div>
+
+</div></div>
+
+<div class="l-footer"><div class="l-footer-h">
+
+	<div class="l-subfooter pos_top"><div class="l-subfooter-h">
+
+				<div style="display: block">
+
+			<div class="w-switcher">
+				<div class="w-switcher-label" data-value="ru-RU">Рус</div>
+				<div class="w-switcher-ar"><div class="w-switcher-area"><div class="w-switcher-area-knob"></div></div></div>
+				<div class="w-switcher-label" data-value="en-US">Eng</div>
+			</div>
+
+			<div class="l-subfooter-divider"></div>
+
+		</div>
+		
+		<div class="w-copyright">
+			<span class="i18n lang_ru">© 2012 ОАО «Концерн Росэнергоатом»</span>
+			<span class="i18n lang_en">© 2012 Rosenergoatom Concern OJSC</span>
+		</div>
+
+		<div class="w-nav"><div class="w-nav-h">
+
+	<!-- level 1 -->
+	<div class="w-nav-list layout_hor view_list level_1"><div class="w-nav-list-h">
+			<div class="w-nav-item level_1" data-id="1026"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1 i-link name_report-map" data-id="1026" data-type="element_page">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Карта отчета</span>
+					<span class="i18n lang_en">Report Map</span>
+				</span>
+			</a>
+			
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="345"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1 i-link name_obratnaya-svyaz" data-id="345" data-type="element_page">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Обратная связь</span>
+					<span class="i18n lang_en">Feedback</span>
+				</span>
+			</a>
+			
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="346"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1 i-link name_glossarij" data-id="346" data-type="element_page">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Глоссарий</span>
+					<span class="i18n lang_en">Glossary</span>
+				</span>
+			</a>
+			
+			
+		</div></div>
+			<div class="w-nav-item level_1" data-id="347"><div class="w-nav-item-h">
+
+						<a href="javascript:void(0)" class="w-nav-anchor level_1 i-link name_contacts" data-id="347" data-type="element_page">
+				<span class="w-nav-icon"></span>
+				<span class="w-nav-anchor-h">
+					<span class="i18n lang_ru">Контакты</span>
+					<span class="i18n lang_en">Contacts</span>
+				</span>
+			</a>
+			
+			
+		</div></div>
+	
+		</div></div>
+
+</div></div> <!-- / w-nav -->
+
+		<div class="l-subfooter-divider"></div>
+
+		<div class="w-socials">
+			<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+			<div class="i18n lang_ru" id="ya_share_ru"></div>
+			<div class="i18n lang_en" id="ya_share_en"></div>
+		</div>
+
+				<a href="javascript:window.canvas.open({primary: {type: 'page', id: 826}, secondary: {type: 'note', id: 874}})" class="w-gributton"></a>		
+		<a class="w-poweredby" href="http://www.downstream.ru/" target="_blank">Proudly powered by Downstream Technologies</a>
+
+	</div></div>
+
+</div></div>
+
+</div>
+</div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter17575285 = new Ya.Metrika({id:17575285, enableAll: true, trackHash:true, webvisor:true});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/17575285" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>

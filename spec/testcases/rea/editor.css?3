@@ -1,0 +1,551 @@
+@import "normalize.css?4";
+@import "font-face.css";
+
+/* Main font */
+body, p, td {
+	font-family: "FreeSetWeb", Arial, sans-serif;
+	font-size: 13px;
+	color: #252525;
+	}
+
+.i-wysiwyg {
+	width: 560px;
+	margin: 20px;
+	}
+
+.i-text blockquote {
+	}
+
+.i-text h1 {
+	font-family: "FreeSetWeb", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000;
+	letter-spacing: -1px;
+	margin: 0 0 21px 0;
+	font-weight: normal;
+	}
+	td > h1:last-child {
+		margin-bottom: 0;
+		}
+	/* IE7 :last-child fix */
+	td > h1.last-child {
+		margin-bottom: 0;
+		}
+
+.i-text h2,
+.i-text h3 {
+	font-family: "FreeSetWeb", Arial, sans-serif;
+	font-weight: normal;
+	}
+	
+.i-text h2 {
+	font-size: 13px;
+	color: #000;
+	margin: 0 0 14px 0;
+	}
+	.i-text td > h2:last-child {
+		margin-bottom: 0;
+		}
+	/* IE7 :last-child fix */
+	.i-text td > h2.last-child {
+		margin-bottom: 0;
+		}
+		
+.i-text h4 {
+	font-family: "FreeSetWeb", Arial, sans-serif;
+	font-weight: bold;
+	}
+		
+.i-text p {
+	text-align: justify;
+	margin: 0 0 15px;
+	line-height: 17px;
+	}
+	.l-body.browser_chrome .i-text p {
+		/* Chrome render fix */
+		margin-right: -2px;
+		padding-right: 2px;
+		}
+	.i-text td > p:last-child {
+		margin-bottom: 0;
+		}
+	/* IE7 :last-child fix */
+	.i-text td > p.last-child {
+		margin-bottom: 0;
+		}
+.i-text p.icon_tree,
+.i-text p.icon_pie,
+.i-text p.icon_table,
+.i-text p.icon_world,
+.i-text p.icon_line {
+	margin-bottom: 10px;
+	}
+		
+.i-text a {
+	text-decoration: underline;
+	color: #252525;
+	}
+	.i-text a:hover {
+		color: #000;
+		}
+	.i-text a.i-link {
+		text-decoration: none;
+		cursor: pointer;
+		}
+	.i-text a.i-link .i-link-h {
+		border-bottom: 1px #252525 dashed;
+		}
+		.i-text .icon_line a.i-link,
+		.i-text .icon_pie a.i-link,
+		.i-text .icon_table a.i-link,
+		.i-text .icon_tree a.i-link,
+		.i-text .icon_world a.i-link {
+			padding: 8px 0 7px 35px;
+			display: block;
+			/* to gain valid hasLayout */
+			min-width: 1px;
+			}
+		.i-text .icon_line a.i-link {
+			background: url(../img/i-link.icon_line.png) 0 50% no-repeat;
+			}
+		.i-text .icon_pie a.i-link {
+			background: url(../img/i-link.icon_pie.png) 0 50% no-repeat;
+			}
+		.i-text .icon_table a.i-link {
+			background: url(../img/i-link.icon_table.png) 0 50% no-repeat;
+			}
+		.i-text .icon_tree a.i-link {
+			background: url(../img/i-link.icon_tree.png) 0 50% no-repeat;
+			}
+		.i-text .icon_world a.i-link {
+			background: url(../img/i-link.icon_world.png) 0 50% no-repeat;
+			}
+
+/*
+ ********************** Списки ***********************/
+.i-text ul,
+.i-text ol {
+	margin: 0 0 15px;
+	padding: 0 0 0 25px;
+	}
+	.i-text ul li,
+	.i-text ol li {
+		line-height: 17px;
+		margin: 0 0 3px;
+		}
+	.i-text ul ul,
+	.i-text ol ul {
+		margin: 0 0 5px;
+		padding: 0 0 0 15px;
+		}
+	.i-text ul ul > li,
+	.i-text ol ul > li {
+		text-indent: -9px;
+		list-style: none;
+		margin: 0 0 2px;
+		}
+		.i-text ul ul > li:before,
+		.i-text ol ul > li:before {
+			content: "–";
+			position: relative;
+			left: -5px;
+			}
+
+/*
+ ************** Таблицы с разделителями ******************/
+.i-text table.striped,
+.i-text table.striped_mini,
+.i-text table.striped_micro {
+	margin: 0 0 15px;
+	width: 100%;
+	float: none; /* To prevent align="left" floatings */
+	}
+	.i-text table.striped > thead,
+	.i-text table.striped_mini > thead,
+	.i-text table.striped_micro > thead {
+		}
+		.i-text table.striped > thead > tr > td,
+		.i-text table.striped_mini > thead > tr > td,
+		.i-text table.striped_micro > thead > tr > td {
+			background-color: #bbb;
+			padding: 2px 5px;
+			}
+			.i-text table.striped > thead > tr > td > p,
+			.i-text table.striped_mini > thead > tr > td > p,
+			.i-text table.striped_micro > thead > tr > td > p {
+				}
+	.i-text table.striped > tbody,
+	.i-text table.striped_mini > tbody,
+	.i-text table.striped_micro > tbody {
+		}
+		.i-text table.striped > tbody > tr > td,
+		.i-text table.striped_mini > tbody > tr > td,
+		.i-text table.striped_micro > tbody > tr > td {
+			padding: 2px 5px;
+			border-bottom: 1px #eaeaeb solid;
+			}
+		.i-text table.striped_mini > thead > tr > td,
+		.i-text table.striped_mini > thead > tr > td > p,
+		.i-text table.striped_mini > tbody > tr > td,
+		.i-text table.striped_mini > tbody > tr > td > p,
+		.i-text table.striped_mini > tfoot > tr > td,
+		.i-text table.striped_mini > tfoot > tr > td > p {
+			font-size: 9px;
+			line-height: 12px;
+			}
+		.i-text table.striped_micro > thead > tr > td,
+		.i-text table.striped_micro > thead > tr > td > p,
+		.i-text table.striped_micro > tbody > tr > td,
+		.i-text table.striped_micro > tbody > tr > td > p,
+		.i-text table.striped_micro > tfoot > tr > td,
+		.i-text table.striped_micro > tfoot > tr > td > p {
+			font-size: 7px;
+			line-height: 10px;
+			}
+			/*
+			 * Четные строки
+			 */
+			/* <IE7, IE8> */
+			.i-text table.striped > tbody > tr.odd > td,
+			.i-text table.striped_mini > tbody > tr.odd > td,
+			.i-text table.striped_micro > tbody > tr.odd > td {
+				background-color: #f1f2f2;
+				}
+			/* </IE7, IE8> */
+			.i-text table.striped > tbody > tr:nth-child(2n) > td,
+			.i-text table.striped_mini > tbody > tr:nth-child(2n) > td,
+			.i-text table.striped_micro > tbody > tr:nth-child(2n) > td {
+				background-color: #f1f2f2;
+				}
+			/*
+			 *  Нечетные строки
+			 */
+			/* <IE7, IE8> */
+			.i-text table.striped > tbody > tr.even > td,
+			.i-text table.striped_mini > tbody > tr.even > td,
+			.i-text table.striped_micro > tbody > tr.even > td {
+				}
+			/* </IE7, IE8> */
+			.i-text table.striped > tbody > tr:nth-child(2n+1) > td,
+			.i-text table.striped_mini > tbody > tr:nth-child(2n+1) > td,
+			.i-text table.striped_micro > tbody > tr:nth-child(2n+1) > td {
+				}
+	.i-text table.striped > tfoot,
+	.i-text table.striped_mini > tfoot,
+	.i-text table.striped_micro > tfoot {
+		}
+		.i-text table.striped > tfoot > tr > td,
+		.i-text table.striped_mini > tfoot > tr > td,
+		.i-text table.striped_micro > tfoot > tr > td {
+			background-color: #dcddde;
+			padding: 2px 5px;
+			}
+
+/*
+ ************** Таблицы 2******************/
+.i-text table.simple,
+.i-text table.simple_18,
+.i-text table.simple_20 {
+	margin: 0 0 15px;
+	width: 100%;
+	}
+	.i-text table.simple > tbody > tr > td,
+	.i-text table.simple_18 > tbody > tr > td,
+	.i-text table.simple_20 > tbody > tr > td {
+		background-color: transparent;
+		color: #000;
+		padding: 10px 0;
+		border-bottom: 1px #000 solid;
+		border-top: 1px #000 solid;
+		font-size: 16px;
+		}
+		.i-text table.simple > tbody > tr > td > p,
+		.i-text table.simple_18 > tbody > tr > td > p,
+		.i-text table.simple_20 > tbody > tr > td > p {
+			color: #000;
+			}
+	.i-text table.simple_18 > tbody > tr > td {
+		font-size: 18px;
+		}
+	.i-text table.simple_20 > tbody > tr > td {
+		font-size: 20px;
+		}
+
+
+/*
+ ************** Таблица с невидимыми границами на всю ширину окна ******************/
+.i-text table.transparent {
+	margin: 0 0 15px;
+	width: 100%;
+	}
+	.i-text table.transparent > thead > tr > td {
+		color: #000;
+		}
+		.i-text table.transparent > thead > tr > td > p {
+			color: #000;
+			}
+
+
+/*
+ *************** Стиль строки: подзаголовок *********************************/
+.i-text table > tbody > tr.subheader {
+	}
+	.i-text table > tbody > tr.subheader > td,
+	/* <IE7, IE8> */
+	.l-body .i-text table > tbody > tr.subheader.even > td,
+	.l-body .i-text table > tbody > tr.subheader.odd > td {
+	/* </IE7, IE8> */
+		background-color: #999;
+		color: #fff;
+		}
+	.l-body .i-text table > tbody > tr.subheader:nth-child(2n+1) > td,
+	.l-body .i-text table > tbody > tr.subheader:nth-child(2n) > td {
+		background-color: #999;
+		color: #fff;
+		}
+	.l-body .i-text table > tbody > tr.subheader > td > p,
+	/* <IE7, IE8> */
+	.l-body .i-text table > tbody > tr.subheader.even > td > p,
+	/* </IE7, IE8> */
+	.l-body .i-text table > tbody > tr.subheader:nth-child(2n+1) > td > p {
+		color: #fff;
+		}
+
+
+/*
+ *************** Стиль строки: подитог *********************************/
+.i-text table > tr.subfooter {
+	}
+	.l-body .i-text table > tbody > tr.subfooter > td {
+		background-color: #dcddde;
+		color: #000;
+		font-weight: bold;
+		}
+	.l-body .i-text table > tbody > tr.subfooter > td > p {
+		color: #000;
+		font-weight: bold;
+		}
+	.i-text table > tbody > tr.subfooter:nth-child(2n+1) > td > p,
+	.i-text table > tbody > tr.subfooter:nth-child(2n) > td > p {
+		color: #000;
+		font-weight: bold;
+		}
+
+/*
+ *************** Стиль ячейки: Выделение *********************************/
+.i-text table > thead > tr > td.highlight,
+.i-text table > tbody > tr > td.highlight,
+/* Hack to add weight to selector */
+.l-body .i-text table > tbody > tr > td.highlight,
+.i-text table > tfoot > tr > td.highlight {
+	background-color: #cfcfcf;
+	}
+
+/* Alignments */
+.i-text p.align_left,
+.i-text h1.align_left,
+.i-text h2.align_left,
+.i-text h3.align_left,
+.i-text h4.align_left,
+.i-text h5.align_left,
+.i-text h6.align_left,
+.i-text td.align_left,
+.i-text th.align_left,
+.i-text div.align_left,
+.i-text ul.align_left,
+.i-text ol.align_left,
+.i-text li.align_left {
+	text-align: left;
+	}
+
+.i-text p.align_center,
+.i-text h1.align_center,
+.i-text h2.align_center,
+.i-text h3.align_center,
+.i-text h4.align_center,
+.i-text h5.align_center,
+.i-text h6.align_center,
+.i-text td.align_center,
+.i-text th.align_center,
+.i-text div.align_center,
+.i-text ul.align_center,
+.i-text ol.align_center,
+.i-text li.align_center {
+	text-align: center;
+	}
+
+.i-text p.align_right,
+.i-text h1.align_right,
+.i-text h2.align_right,
+.i-text h3.align_right,
+.i-text h4.align_right,
+.i-text h5.align_right,
+.i-text h6.align_right,
+.i-text td.align_right,
+.i-text th.align_right,
+.i-text div.align_right,
+.i-text ul.align_right,
+.i-text ol.align_right,
+.i-text li.align_right {
+	text-align: right;
+	}
+
+.i-text p.align_justify,
+.i-text h1.align_justify,
+.i-text h2.align_justify,
+.i-text h3.align_justify,
+.i-text h4.align_justify,
+.i-text h5.align_justify,
+.i-text h6.align_justify,
+.i-text td.align_justify,
+.i-text th.align_justify,
+.i-text div.align_justify,
+.i-text ul.align_justify,
+.i-text ol.align_justify,
+.i-text li.align_justify {
+	text-align: justify;
+	}
+
+/*
+ ************ Text styles ****************/
+.i-text p.size_micro,
+.i-text ul.size_micro li {
+	font-size: 7px;
+	}
+.i-text p.size_mini,
+.i-text ul.size_mini li {
+	font-size: 9px;
+	}
+.i-text p.size_large,
+.i-text ul.size_large li {
+	font-size: 18px;
+	line-height: 23px;
+	}
+.i-text p.size_extralarge,
+.i-text ul.size_extralarge li {
+	font-size: 20px;
+	line-height: 26px;
+	}
+
+.i-text img.pull_left {
+	float: left;
+	}
+
+.i-text img.pull_center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.i-text img.pull_right {
+	float: right;
+	}
+
+/*
+ ***** Key statements ******/
+.i-keyst p {
+	color: #000;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0 0 8px;
+	}
+	.i-keyst > p:first-child,
+	.i-keyst > ul:first-child,
+	.i-keyst > ol:first-child {
+		margin-top: 0;
+		}
+	.i-keyst > p:last-child,
+	.i-keyst > ul:last-child,
+	.i-keyst > ol:last-child {
+		margin-bottom: 0;
+		}
+	/* IE7 :last-child fix */
+	.i-keyst > p.last-child,
+	.i-keyst > ul.last-child,
+	.i-keyst > ol.last-child {
+		margin-bottom: 0;
+		}
+.i-keyst ul {
+	padding: 0 0 0 25px;
+	margin: 0 0 8px;
+	}
+	.i-keyst ul li {
+		color: #000;
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 3px;
+		}
+.i-keyst p.size_large,
+.i-keyst ul.size_large li {
+	font-size: 18px;
+	line-height: 23px;
+	}
+.i-keyst p.size_extralarge,
+.i-keyst ul.size_extralarge li {
+	font-size: 20px;
+	line-height: 26px;
+	}
+
+
+/*
+ ****** Widget: Files *************/
+.w-files {
+	}
+	.w-files-table {
+		width: 100%;
+		}
+		.w-files-cell {
+			padding: 8px 5px;
+			border-top: 1px solid #ebebeb;
+			border-bottom: 1px solid #ebebeb;
+			vertical-align: middle;
+			}
+			.w-files-cell.order_2,
+			.w-files-cell.order_3 {
+				width: 30px;
+				}
+.w-files-row.level_2 .w-files-title {
+	display: block;
+	padding-right: 20px;
+	text-transform: uppercase;
+	}
+.w-files-row.level_3 .w-files-title {
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	}
+.w-files-row.level_4 .w-files-title {
+	display: block;
+	padding-right: 20px;
+	padding-left: 45px;
+	}
+.w-files-row.level_5 .w-files-title {
+	display: block;
+	padding-right: 20px;
+	padding-left: 70px;
+	}
+	.w-files-row:hover {
+		background: #f6f6f6;
+		}
+	.w-files-row:hover .w-files-title  {
+		color: #000;
+		}
+
+		.w-files-button.type_pdf,
+		.w-files-button.type_xls {
+			display: block;
+			background: #b1b1b1;
+			width: 30px;
+			height: 18px;
+			text-indent: 0;
+			font: 10px/18px Tahoma, sans-serif;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			text-align: center;
+			}
+		.w-files-button.type_pdf:hover,
+		.w-files-button.type_xls:hover {
+			background: #000;
+			}

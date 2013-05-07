@@ -2,8 +2,47 @@ require 'spec_helper'
 require 'dump.rb'
 
 describe Dump do
-  subject do
-    Dump.new 'http://google.com'
+  describe 'general' do
+    let(:css_file) { TEST_DIR + 'rea/editor.css?3'}
+
+    subject do
+      Dump.new rx_url: '/assets/i'
+    end
+
+    it "should detect good_resource" do
+      subject.good_resource?('assets').should == true
+      subject.good_resource?('asset').should == false
+    end
+
+    it "should build_uri" do
+      base_uri = URI('http://google.com/css/')
+
+      # same
+      subject.build_uri(base_uri, '1.css').to_s.should == 'http://google.com/css/1.css'
+      subject.build_uri(base_uri, './1.css').to_s.should == 'http://google.com/css/1.css'
+
+      # root
+      subject.build_uri(base_uri, '/1.html').to_s.should == 'http://google.com/1.html'
+
+      # relative
+      subject.build_uri(base_uri, '../1.html').to_s.should == 'http://google.com/1.html'
+      subject.build_uri(base_uri, '../js/1.js').to_s.should == 'http://google.com/js/1.js'
+      subject.build_uri(base_uri, '/../js/1.js').to_s.should == 'http://google.com/js/1.js'
+
+      # other
+      subject.build_uri(base_uri, 'http://ya.ru/1.css').to_s.should == 'http://ya.ru/1.css'
+
+      # bad
+      subject.build_uri(base_uri, '([^').should == nil
+    end
+
+    it "should process_data" do
+      base_uri = URI('http://google.com/editor.css?3')
+
+      all = subject.process_data(base_uri, css_file)
+      all.should_not be_empty
+      ap all
+    end
   end
 
   describe "eat.fi" do
@@ -25,11 +64,6 @@ describe Dump do
   describe "roadtrippers.com" do
     subject do
       Dump.new 'https://roadtrippers.com/welcome?mode=explore', rx_url: '/assets/i', skip_errors: false
-    end
-
-    it "should detect good_resource" do
-      subject.good_resource?('assets').should == true
-      subject.good_resource?('asset').should == false
     end
 
     it 'should process_data' do
@@ -80,6 +114,31 @@ describe Dump do
 
     it "should process_site level 2" do
       subject.process_site(nil, 2) # images in css
+      subject.processed_links.count.should be > 1
+    end
+  end
+
+  describe "report2011.rosenergoatom.ru" do
+    let(:url) { 'http://report2011.rosenergoatom.ru/' }
+
+    subject do
+      Dump.new skip_errors: false
+    end
+
+    it "should process_site level 0" do
+      subject.process_site(url, 0)
+      subject.processed_links.count.should == 1
+
+      subject.save_cookies
+    end
+
+    it "should process_site level 1" do
+      subject.process_site(url, 1) # assets
+      subject.processed_links.count.should be > 1
+    end
+
+    it "should process_site level 2" do
+      subject.process_site(url, 2) # images in css
       subject.processed_links.count.should be > 1
     end
   end

@@ -7,18 +7,15 @@ class Dump
   include WebTools::Agent
 
   attr_reader :parser
-  attr_reader :site_url
   attr_reader :processed_links
+  attr_reader :rx_url
 
-  def initialize(site_url, params = {})
-    params.reverse_merge! :debug => true, :caching => true, :caching_timeout => -1, :skip_errors => true
+  def initialize(params = {})
+    params.reverse_merge! :debug => false, :caching => true, :caching_timeout => -1, :skip_errors => true
     agent_init(params)
-
     load_cookies
 
     @parser = Parser.new
-
-    @site_url = URI.parse(site_url)      # base url
     @processed_links = Set.new
 
     if params[:rx_url]
@@ -30,89 +27,103 @@ class Dump
 
   # Valid link for processing
   def good_resource?(url)
-    if @rx_url
-      !!(url.to_s =~ @rx_url)
+    if rx_url
+      !(url.to_s !~ rx_url)
     else
       true
     end
   end
 
-  # Create full site URI from partial link
-  def build_uri(str)
-    uri = URI.parse(str)
+  # Create full URI from partial link
+  def build_uri(base_uri, url)
+    uri = URI(url)
     unless uri.host
-      uri = @site_url.merge(str)
+      uri = base_uri.merge(url)
     end
     uri
+  rescue => ex
+    nil
   end
 
   # Get links from local file
-  def process_data(file_name)
-    puts "    process_data(#{file_name})"
-    dat = File.read(file_name)
-    fix_encoding! dat
+  def process_data(base_uri, file_name)
+    puts "\tprocess_data(#{file_name})"
 
     links = []
 
-    ext = File.extname(file_name).downcase
+    ext = parser.get_extension(base_uri)
     if ext == '.css'
-      links = parser.get_links_from_css dat
-    elsif ext == '.js'
-      #TODO
+      # CSS
+      links = parser.get_links_from_css file_name
     elsif %w{ .gif .png .jpg .jpeg .ico }.include? ext
       # skip
     else
-      links = parser.get_links_from_html dat
+      # HTML
+      # JS
+      links = parser.get_links_from_html file_name
     end
 
-    links.select {|link| good_resource?(link)}
+    links.inject([]) do |memo, link|
+      uri = build_uri(base_uri, link)
+      memo << uri if uri
+      memo
+    end
   end
 
   # Links from page
   #   links - list of load resources
   #   level - unlimited if -1, only these links if 0, children links from links if 1, etc
-  def process_links(links, level = -1)
-    links.each do |link|
-      uri = build_uri link
+  def process_links(base_uri, links, level = -1)
+    links.each do |uri|
+      # Good to process
+      next unless good_resource?(uri)
+
+      # Same domain
+      next unless uri.host == base_uri.host
+
+      # Already processed
       next if @processed_links.include? uri.to_s
       @processed_links << uri.to_s
 
-      if uri.host == @site_url.host
-        file_name = agent.cached_file_name(uri)
-        puts "#{uri} -> #{file_name}"
-
-        begin
-          page = agent.get(uri)
-          if agent.get_cached?(uri)
-            unless level == 0
-              new_links = process_data(file_name)
-              process_links(new_links, level - 1)
-            end
-          end
-        rescue => ex
-          puts "\terror"
-          pp ex
-
-          unless parser_params[:skip_errors]
-            raise
-          end
+      # Run
+      puts uri
+      begin
+        page = agent.get(uri)
+        puts "\tok"
+        if level != 0 && agent.get_cached?(uri)
+          file_name = agent.cached_file_name(uri)
+          new_links = process_data(uri, file_name)
+          #ap new_links
+          process_links(uri, new_links, level - 1)
+        end
+      rescue Mechanize::ResponseCodeError
+        puts "\terror"
+      rescue => ex
+        unless parser_params[:skip_errors]
+          raise
         end
       end
 
     end
   end
 
-  # Local file
-  def process_file(file_name)
-    new_links = process_data(file_name)
-    process_links new_links
-  end
-
-  # Get and process file from site
-  def process_site(site_url = nil, deep_level = -1)
-    process_links([site_url || @site_url.to_s], deep_level)
+  # Start with local file
+  def process_file(file_path, url, deep_level = -1)
+    base_uri = URI(url)
+    links = process_data(base_uri, file_path)
+    process_links(base_uri, links, deep_level)
 
     puts "\nProcessed links:"
     pp @processed_links
+  end
+
+  # Start with url
+  def process_site(url, deep_level = -1)
+    base_uri = URI(url)
+    links = [ base_uri ]
+    process_links(base_uri, links, deep_level)
+
+    puts "\nProcessed links:"
+    pp @processed_links.to_a.sort
   end
 end

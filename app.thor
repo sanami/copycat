@@ -5,18 +5,26 @@ require 'form.rb'
 require 'convert.rb'
 
 class App < Thor
-  desc "dump_file SITE_URL FILE_PATH", "dump site resources"
-  def dump_file(site_url, file_path)
-    dump = Dump.new(site_url, debug: false)
-    # dump.process_links [file_path]
-    dump.process_file(file_path)
+  desc "dump_file FILE_PATH URL RX_GOOD DEEP_LEVEL", "dump file resources"
+  def dump_file(file_path, url, rx_good = nil, deep_level = nil)
+    params = { }
+    params[:rx_url] = rx_good if rx_good.present?
+    params[:deep_level] = deep_level.to_i if deep_level.present?
+    ap params
+
+    dump = Dump.new(params)
+    dump.process_file(file_path, url, params[:deep_level])
   end
 
-  desc "dump_site SITE_URL RX_GOOD DEEP_LEVEL", "dump all site resources"
-  def dump_site(site_url, rx_good = nil, deep_level = -1)
-    pp site_url, rx_good, deep_level
-    dump = Dump.new(site_url, rx_url: rx_good, debug: false)
-    dump.process_site(nil, deep_level.to_i)
+  desc "dump_site URL RX_GOOD DEEP_LEVEL", "dump all site resources"
+  def dump_site(url, rx_good = nil, deep_level = -1)
+    params = { }
+    params[:rx_url] = rx_good if rx_good.present?
+    params[:deep_level] = deep_level.to_i if deep_level.present?
+    ap params
+
+    dump = Dump.new(params)
+    dump.process_site(url, params[:deep_level])
     dump.save_cookies
   end
 
