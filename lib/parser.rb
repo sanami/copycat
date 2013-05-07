@@ -7,8 +7,8 @@ class Parser
   def get_links_from_html(file_name)
     dat = File.read(file_name)
     fix_encoding! dat
-
     all = []
+
     rx_href = /(href|src)=["'](.+?)["']/
 
     rx_bad = []
@@ -24,6 +24,37 @@ class Parser
       elsif link.start_with? '//'
         # Add scheme
         all << "http:#{link}"
+      else
+        all << link
+      end
+    end
+
+    all
+  end
+
+  def get_links_from_js(file_name)
+    dat = File.read(file_name)
+    all = []
+
+    # src=\"upload/ru/4.png\"
+    rx_href = /(href|src)=[\\"']+(.+?)[\\"']+/
+
+    rx_bad = []
+    rx_bad << /^#/ # href="#"
+    rx_bad << /^javascript:/ # href="javascript:void(0)"
+
+    dat.scan(rx_href) do |matches|
+      #pp matches
+      link = matches[1]
+
+      if rx_bad.any? {|rx| link =~ rx }
+        # Skip
+      elsif link.start_with? '//'
+        # Add scheme
+        all << "http:#{link}"
+      elsif !link.start_with? '/'
+        # Add root
+        all << "/#{link}"
       else
         all << link
       end

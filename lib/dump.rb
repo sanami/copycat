@@ -55,11 +55,13 @@ class Dump
     if ext == '.css'
       # CSS
       links = parser.get_links_from_css file_name
+    elsif ext == '.js'
+      # JS
+      links = parser.get_links_from_js file_name
     elsif %w{ .gif .png .jpg .jpeg .ico }.include? ext
       # skip
     else
       # HTML
-      # JS
       links = parser.get_links_from_html file_name
     end
 

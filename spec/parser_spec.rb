@@ -4,6 +4,7 @@ require 'parser.rb'
 describe Parser do
   let(:css_file) { TEST_DIR + 'rea/editor.css?3'}
   let(:html_file) { TEST_DIR + 'rea/index'}
+  let(:js_file) { TEST_DIR + 'rea/export-all.js'}
 
   subject do
     Parser.new
@@ -29,6 +30,12 @@ describe Parser do
   it 'should get_links_from_html' do
     all = subject.get_links_from_html(html_file)
     ap all
+  end
+
+  it 'should get_links_from_js' do
+    all = subject.get_links_from_js(js_file)
+    ap all
+    all.should include "/upload/ru/4.png"
   end
 
 end
